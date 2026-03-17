@@ -17,7 +17,7 @@ if errorlevel 1 exit /b 1
 python scripts\build_yolo_dataset.py --config configs\dataset_sources.yaml --out datasets\disaster
 if errorlevel 1 exit /b 1
 
-if "%TRAIN_EPOCHS%"=="" set TRAIN_EPOCHS=5
+if "%TRAIN_EPOCHS%"=="" set TRAIN_EPOCHS=35
 if "%TRAIN_DEVICE%"=="" set TRAIN_DEVICE=auto
 if "%TRAIN_WORKERS%"=="" set TRAIN_WORKERS=4
 if "%TRAIN_CACHE%"=="" set TRAIN_CACHE=disk
