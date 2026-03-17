@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Disaster Management Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="bg-shape bg-shape-a"></div>
+  <div class="bg-shape bg-shape-b"></div>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Emergency AI Grid</p>
+      <h1>Multi-Disaster Monitoring Console</h1>
+    </div>
+    <div class="controls">
+      <button id="startBtn" class="btn btn-primary">Start Monitoring</button>
+      <button id="stopBtn" class="btn btn-outline">Stop</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="card video-card">
+      <div class="card-head">
+        <h2>Live Feed</h2>
+        <span id="runPill" class="pill offline">OFFLINE</span>
+      </div>
+      <div class="video-wrap">
+        <img id="videoFeed" alt="Live video" />
+        <div class="scanline"></div>
+      </div>
+    </section>
+
+    <section class="card stats-card">
+      <h2>System Status</h2>
+      <div id="statusGrid" class="status-grid"></div>
+    </section>
+
+    <section class="card alerts-card">
+      <h2>Active Alerts</h2>
+      <ul id="activeList" class="incident-list"></ul>
+    </section>
+
+    <section class="card timeline-card">
+      <h2>Incident Timeline</h2>
+      <ul id="recentList" class="incident-list compact"></ul>
+    </section>
+
+    <section class="card metrics-card">
+      <h2>Analytics</h2>
+      <pre id="metricsBox" class="metrics-box"></pre>
+    </section>
+
+    <section class="card logs-card">
+      <h2>Mongo Logs</h2>
+      <div class="log-filters">
+        <input id="logDate" type="date" />
+        <select id="logTag">
+          <option value="">All tags</option>
+          <option value="danger_fire">danger_fire</option>
+          <option value="danger_flood">danger_flood</option>
+          <option value="human_fire">human_fire</option>
+          <option value="human_flood">human_flood</option>
+          <option value="fire">fire</option>
+          <option value="flood">flood</option>
+          <option value="survivor">survivor</option>
+        </select>
+        <input id="logSearch" type="text" placeholder="Search message" />
+        <button id="searchLogsBtn" class="btn btn-outline" type="button">Search Logs</button>
+      </div>
+      <ul id="logsList" class="incident-list compact"></ul>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

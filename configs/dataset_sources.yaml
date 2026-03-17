@@ -1,0 +1,86 @@
+class_names:
+  - person
+  - fire
+  - smoke
+  - road_accident
+  - crowd_panic
+  - fallen_person
+  - earthquake
+  - unsafe_zone
+  - flood
+
+# Sources are intentionally small and can be classification style.
+# The builder converts classification folders into weak YOLO labels.
+# Missing source folders are skipped automatically.
+sources:
+  - name: survivor_person_cls
+    type: classification
+    root_dir: datasets/raw/survivor_person
+    split_dirs: [train, val, test]
+    binary_target_id: 0
+    positive_keywords: [person, people, human, survivor, pedestrian]
+    negative_keywords: [non, normal, background, empty]
+
+  - name: road_accident_cls
+    type: classification
+    root_dir: datasets/raw/accident/data
+    split_dirs: [train, val, test]
+    binary_target_id: 3
+    positive_keywords: [accident, crash, collision]
+    negative_keywords: [non, normal, safe]
+
+  - name: fire_smoke_cls
+    type: classification
+    root_dir: datasets/raw/fire_smoke
+    split_dirs: [train, val, test]
+    binary_target_id: 1
+    positive_keywords: [fire, flame, smoke]
+    negative_keywords: [non, normal, safe]
+
+  - name: smoke_cls
+    type: classification
+    root_dir: datasets/raw/smoke
+    split_dirs: [train, val, test]
+    binary_target_id: 2
+    positive_keywords: [smoke, haze, fume]
+    negative_keywords: [non, normal, safe, clear]
+
+  - name: crowd_panic_cls
+    type: classification
+    root_dir: datasets/raw/crowd
+    split_dirs: [train, val, test]
+    binary_target_id: 4
+    positive_keywords: [crowd, panic, stampede]
+    negative_keywords: [non, normal, safe]
+
+  - name: earthquake_cls
+    type: classification
+    root_dir: datasets/raw/earthquake_damage
+    split_dirs: [train, val, test]
+    binary_target_id: 6
+    positive_keywords: [earthquake, quake, collapse, rubble, damage]
+    negative_keywords: [non, normal, safe]
+
+  - name: fallen_person_cls
+    type: classification
+    root_dir: datasets/raw/fallen_person
+    split_dirs: [train, val, test]
+    binary_target_id: 5
+    positive_keywords: [fall, fallen, lying, injured]
+    negative_keywords: [non, normal, standing, safe]
+
+  - name: unsafe_zone_cls
+    type: classification
+    root_dir: datasets/raw/unsafe_zone
+    split_dirs: [train, val, test]
+    binary_target_id: 7
+    positive_keywords: [unsafe, hazard, nohelmet, danger, restricted]
+    negative_keywords: [safe, compliant, normal]
+
+  - name: flood_cls
+    type: classification
+    root_dir: datasets/raw/flood
+    split_dirs: [train, val, test]
+    binary_target_id: 8
+    positive_keywords: [flood, inundation, waterlogging, submerged, water]
+    negative_keywords: [non, normal, dry, safe]
