@@ -15,6 +15,11 @@ class AppState:
         self.last_frame_ts: Optional[datetime] = None
         self.current_fps: float = 0.0
         self.people_in_frame: int = 0
+        self.risk_score: float = 0.0
+        self.risk_level: str = "low"
+        self.risk_raw: float = 0.0
+        self.risk_features: dict = {}
+        self.risk_contributions: dict = {}
         self.running: bool = False
 
         self.incidents: List[Incident] = []

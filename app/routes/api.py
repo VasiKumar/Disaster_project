@@ -37,6 +37,8 @@ def get_status() -> SystemStatus:
         cameras_online=1 if state.running else 0,
         fps=state.current_fps,
         people_in_frame=state.people_in_frame,
+        risk_score=state.risk_score,
+        risk_level=state.risk_level,
     )
 
 
@@ -50,7 +52,15 @@ def get_dashboard_snapshot() -> DashboardSnapshot:
         status=status,
         active_incidents=active,
         recent_incidents=recent,
-        metrics=build_metrics(active, recent, state.people_in_frame),
+        metrics=build_metrics(
+            active,
+            recent,
+            state.people_in_frame,
+            state.risk_score,
+            state.risk_level,
+            state.risk_features,
+            state.risk_contributions,
+        ),
     )
 
 

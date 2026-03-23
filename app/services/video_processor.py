@@ -14,6 +14,7 @@ from app.services.alerts import AlertDispatcher
 from app.services.decision_engine import DecisionEngine
 from app.services.detector import MultiDisasterDetector
 from app.services.mongo_logs import mongo_log_service
+from app.services.risk_regression import LinearRiskRegressor
 from app.state import state
 
 
@@ -22,6 +23,7 @@ class VideoProcessor:
         self.detector = MultiDisasterDetector()
         self.decision_engine = DecisionEngine()
         self.alert_dispatcher = AlertDispatcher()
+        self.risk_regressor = LinearRiskRegressor()
         self.thread: threading.Thread | None = None
         self.stop_event = threading.Event()
         self.cap: cv2.VideoCapture | None = None
@@ -65,8 +67,14 @@ class VideoProcessor:
                 break
 
             detections = self.detector.detect(frame)
+            risk = self.risk_regressor.predict(detections, self.detector.last_people_count)
             with state.lock:
                 state.people_in_frame = self.detector.last_people_count
+                state.risk_score = risk.score
+                state.risk_level = risk.level
+                state.risk_raw = risk.raw
+                state.risk_features = risk.features
+                state.risk_contributions = risk.contributions
 
             incidents = self.decision_engine.generate_incidents(
                 detections=detections,
@@ -161,6 +169,16 @@ class VideoProcessor:
             cv2.FONT_HERSHEY_SIMPLEX,
             0.62,
             (0, 255, 0),
+            2,
+        )
+        top += 28
+        cv2.putText(
+            frame,
+            f"Risk score: {state.risk_score:.1f} ({state.risk_level})",
+            (10, top),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            0.62,
+            (0, 220, 255),
             2,
         )
         top += 28

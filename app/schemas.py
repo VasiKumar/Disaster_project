@@ -49,6 +49,8 @@ class SystemStatus(BaseModel):
     cameras_online: int
     fps: float
     people_in_frame: int
+    risk_score: float = 0.0
+    risk_level: Literal["low", "medium", "high", "critical"] = "low"
 
 
 class AlertEvent(BaseModel):

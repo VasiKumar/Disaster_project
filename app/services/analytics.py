@@ -10,6 +10,10 @@ def build_metrics(
     active_incidents: List[Incident],
     recent_incidents: List[Incident],
     people_in_frame: int,
+    risk_score: float,
+    risk_level: str,
+    risk_features: Dict[str, object],
+    risk_contributions: Dict[str, object],
 ) -> Dict[str, object]:
     total_recent = len(recent_incidents)
     by_type = Counter(incident.disaster_type for incident in recent_incidents)
@@ -25,4 +29,8 @@ def build_metrics(
         "severity_distribution": dict(by_severity),
         "survivor_count_estimate": by_type.get("survivor", 0),
         "people_in_frame": people_in_frame,
+        "risk_score": risk_score,
+        "risk_level": risk_level,
+        "risk_features": risk_features,
+        "risk_contributions": risk_contributions,
     }
