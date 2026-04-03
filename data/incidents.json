@@ -8412,5 +8412,527 @@
         "source": "person_model"
       }
     }
+  },
+  {
+    "id": "d37339b3-29ba-4637-8d2b-6d75b207d3eb",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.542,
+    "created_at": "2026-04-03T11:54:05.565315",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.13051
+      }
+    }
+  },
+  {
+    "id": "f17e816e-a18a-4fe3-89c4-ff291927e302",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 2",
+    "location_tag": "Sector-A",
+    "confidence": 0.54,
+    "created_at": "2026-04-03T11:54:22.933069",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 2,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.36719
+      }
+    }
+  },
+  {
+    "id": "6b271c7c-46a4-4ae2-a29e-445e7853e557",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.5,
+    "created_at": "2026-04-03T11:54:31.732016",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.10313
+      }
+    }
+  },
+  {
+    "id": "958746c3-5510-4f04-bed7-4a869dd75f87",
+    "disaster_type": "road_accident",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Potential road accident detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.51,
+    "created_at": "2026-04-03T11:54:38.831995",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "road_accident",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "a819fa0c-692c-43e1-ad99-78c7cdaed294",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.502,
+    "created_at": "2026-04-03T11:54:47.370675",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.2475
+      }
+    }
+  },
+  {
+    "id": "82bb5908-22b4-461c-b56c-5f641631ad9f",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.708,
+    "created_at": "2026-04-03T11:55:06.255511",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.16144
+      }
+    }
+  },
+  {
+    "id": "2909cd29-6958-4ac6-9af2-55df318cab02",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.64,
+    "created_at": "2026-04-03T11:55:14.917081",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.23228
+      }
+    }
+  },
+  {
+    "id": "c1205740-5b20-4534-adac-742e7b17eea0",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.52,
+    "created_at": "2026-04-03T11:55:30.307144",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.32192
+      }
+    }
+  },
+  {
+    "id": "46044360-8d62-415d-9e24-5a5508fcafd4",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.508,
+    "created_at": "2026-04-03T11:55:48.318883",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.37723
+      }
+    }
+  },
+  {
+    "id": "77525cb9-b28a-4c73-839f-be565534b107",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 2",
+    "location_tag": "Sector-A",
+    "confidence": 0.52,
+    "created_at": "2026-04-03T12:00:05.168550",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 2,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.6436
+      }
+    }
+  },
+  {
+    "id": "95d80f9b-3584-4df1-93c5-ff1d82ad7ddc",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.539,
+    "created_at": "2026-04-03T12:00:17.484434",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.54742
+      }
+    }
+  },
+  {
+    "id": "55c1119a-6e51-4373-b17b-cdff5280c9a2",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.732,
+    "created_at": "2026-04-03T12:00:26.980633",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model_zoom",
+        "bbox_area_ratio": 0.75146
+      }
+    }
+  },
+  {
+    "id": "d74477fe-e8cd-4479-987a-9fbf7bc20dce",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.529,
+    "created_at": "2026-04-03T12:00:36.372568",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.84115
+      }
+    }
+  },
+  {
+    "id": "76dc1323-007f-4a77-a0d6-4185cfc21156",
+    "disaster_type": "survivor",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.81,
+    "created_at": "2026-04-03T12:00:46.046190",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.6556
+      }
+    }
+  },
+  {
+    "id": "4b350d69-d357-470d-95f0-c9354d954936",
+    "disaster_type": "survivor",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.856,
+    "created_at": "2026-04-03T12:00:55.657733",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model_zoom",
+        "bbox_area_ratio": 0.6627
+      }
+    }
+  },
+  {
+    "id": "3c944c60-0b2c-423b-a1c8-a511c8b6f551",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.706,
+    "created_at": "2026-04-03T12:01:05.252524",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.75138
+      }
+    }
+  },
+  {
+    "id": "f0eed98c-bebc-4512-9652-92e240d1d52d",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:01:10.159511",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "fire_proximity",
+        "distance_ratio": 0.077
+      }
+    }
+  },
+  {
+    "id": "ee06a65b-f5b5-4725-be45-beecf2b7cc5c",
+    "disaster_type": "fire",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Fire detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.949,
+    "created_at": "2026-04-03T12:01:14.818119",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "fire",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "0dec0162-201f-4c9c-b8f7-06eeebeb0cb6",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.601,
+    "created_at": "2026-04-03T12:01:14.818119",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model_zoom",
+        "bbox_area_ratio": 0.59694
+      }
+    }
+  },
+  {
+    "id": "346e6361-54e6-4c07-94bd-36c874f4e7fe",
+    "disaster_type": "fire",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Fire detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.95,
+    "created_at": "2026-04-03T12:01:24.273223",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "fire",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "c2246c7a-32b1-4df7-8804-21f9ab300778",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.648,
+    "created_at": "2026-04-03T12:01:24.273223",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.66348
+      }
+    }
+  },
+  {
+    "id": "742def88-ea05-43d4-a874-0f3465f98a8f",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.709,
+    "created_at": "2026-04-03T12:01:33.918081",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.71594
+      }
+    }
+  },
+  {
+    "id": "fbeab1a7-b337-461c-85fc-275e14f0ecf7",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.633,
+    "created_at": "2026-04-03T12:01:43.556012",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model_zoom",
+        "bbox_area_ratio": 0.66362
+      }
+    }
+  },
+  {
+    "id": "ec761809-c357-4977-b068-1eccd4fdb9b9",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.88,
+    "created_at": "2026-04-03T12:01:51.154214",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "bf83b803-6f36-49cf-8a70-160e93a1915a",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.596,
+    "created_at": "2026-04-03T12:01:53.796846",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.65915
+      }
+    }
+  },
+  {
+    "id": "df5cf60d-e8d2-49f0-b59f-4f68411a642e",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.642,
+    "created_at": "2026-04-03T12:02:03.755058",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.72057
+      }
+    }
+  },
+  {
+    "id": "2c541df0-cc72-4837-b7e8-fc937e9a2bb7",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.774,
+    "created_at": "2026-04-03T12:02:13.557574",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.66859
+      }
+    }
+  },
+  {
+    "id": "f61dcf2e-afa6-40d6-a35e-fab42099bb00",
+    "disaster_type": "fire",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Fire detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.818,
+    "created_at": "2026-04-03T12:02:30.555678",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "fire",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "d2f42f19-3d4c-428d-89fa-9efc29e85d93",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.785,
+    "created_at": "2026-04-03T12:02:43.409080",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model_zoom",
+        "bbox_area_ratio": 0.71292
+      }
+    }
   }
 ]

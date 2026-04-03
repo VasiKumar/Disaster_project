@@ -11,6 +11,7 @@ const logTag = document.getElementById("logTag");
 const logSearch = document.getElementById("logSearch");
 const searchLogsBtn = document.getElementById("searchLogsBtn");
 const logsList = document.getElementById("logsList");
+let videoStreamActive = false;
 
 async function postJSON(path) {
   const response = await fetch(path, { method: "POST" });
@@ -88,6 +89,21 @@ function renderLogs(logs) {
     .join("");
 }
 
+function syncVideoFeed(running) {
+  if (running) {
+    if (!videoStreamActive) {
+      videoFeed.src = "/api/video_feed";
+      videoStreamActive = true;
+    }
+    return;
+  }
+
+  if (videoStreamActive) {
+    videoFeed.removeAttribute("src");
+    videoStreamActive = false;
+  }
+}
+
 async function refreshLogs() {
   const params = new URLSearchParams();
   if (logDate.value) params.set("date", logDate.value);
@@ -116,12 +132,7 @@ async function refreshDashboard() {
     renderIncidents(activeList, data.active_incidents);
     renderIncidents(recentList, data.recent_incidents);
     metricsBox.textContent = JSON.stringify(data.metrics, null, 2);
-
-    if (data.status.running) {
-      videoFeed.src = "/api/video_feed?ts=" + Date.now();
-    } else {
-      videoFeed.removeAttribute("src");
-    }
+    syncVideoFeed(data.status.running);
   } catch (err) {
     console.error(err);
   }

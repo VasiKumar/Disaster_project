@@ -46,6 +46,7 @@ class Settings:
 
     min_conf_person: float = float(os.getenv("MIN_CONF_PERSON", "0.50"))
     min_conf_person_far: float = float(os.getenv("MIN_CONF_PERSON_FAR", "0.33"))
+    person_zoom_pass_conf: float = float(os.getenv("PERSON_ZOOM_PASS_CONF", "0.22"))
     min_conf_fire: float = float(os.getenv("MIN_CONF_FIRE", "0.60"))
     min_conf_smoke: float = float(os.getenv("MIN_CONF_SMOKE", "0.60"))
     min_conf_flood: float = float(os.getenv("MIN_CONF_FLOOD", "0.72"))
@@ -53,6 +54,12 @@ class Settings:
     min_consecutive_frames: int = int(os.getenv("MIN_CONSECUTIVE_FRAMES", "2"))
     survivor_min_consecutive_frames: int = int(os.getenv("SURVIVOR_MIN_CONSECUTIVE_FRAMES", "1"))
     person_far_bbox_area_ratio: float = float(os.getenv("PERSON_FAR_BBOX_AREA_RATIO", "0.0035"))
+    person_enable_zoom_pass: bool = os.getenv("PERSON_ENABLE_ZOOM_PASS", "true").lower() == "true"
+    person_zoom_pass_scale: float = float(os.getenv("PERSON_ZOOM_PASS_SCALE", "1.6"))
+    person_zoom_pass_trigger_count: int = int(os.getenv("PERSON_ZOOM_PASS_TRIGGER_COUNT", "1"))
+    person_dedupe_iou: float = float(os.getenv("PERSON_DEDUPE_IOU", "0.45"))
+    person_predict_augment: bool = os.getenv("PERSON_PREDICT_AUGMENT", "true").lower() == "true"
+    person_max_det: int = int(os.getenv("PERSON_MAX_DET", "300"))
 
     # Class-specific false-positive control (no retraining required).
     fire_min_bbox_area_ratio: float = float(os.getenv("FIRE_MIN_BBOX_AREA_RATIO", "0.003"))

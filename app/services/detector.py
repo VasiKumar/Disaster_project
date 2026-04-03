@@ -224,41 +224,45 @@ class MultiDisasterDetector:
 
         detections: List[Detection] = []
         people_boxes: List[Tuple[int, int, int, int]] = []
-        results = self.person_model.predict(
-            frame,
-            conf=max(
-                0.05,
-                min(
-                    settings.yolo_conf_threshold,
-                    settings.min_conf_person,
-                    settings.min_conf_person_far,
-                ),
+        base_request_conf = max(
+            0.05,
+            min(
+                settings.yolo_conf_threshold,
+                settings.min_conf_person,
+                settings.min_conf_person_far,
             ),
-            iou=settings.yolo_iou_threshold,
-            imgsz=settings.person_yolo_imgsz,
-            device=settings.yolo_device,
-            classes=[0],  # COCO person class
-            verbose=False,
         )
-        if not results:
+
+        candidates = self._predict_person_candidates(
+            frame,
+            request_conf=base_request_conf,
+            resize_scale=1.0,
+            source="person_model",
+        )
+
+        if settings.person_enable_zoom_pass and len(candidates) <= settings.person_zoom_pass_trigger_count:
+            zoom_request_conf = max(0.05, min(base_request_conf, settings.person_zoom_pass_conf))
+            candidates.extend(
+                self._predict_person_candidates(
+                    frame,
+                    request_conf=zoom_request_conf,
+                    resize_scale=max(settings.person_zoom_pass_scale, 1.0),
+                    source="person_model_zoom",
+                )
+            )
+
+        if not candidates:
             return detections, people_boxes
 
-        boxes = results[0].boxes
-        if boxes is None:
-            return detections, people_boxes
+        merged_candidates = self._merge_person_candidates(candidates)
 
         frame_h, frame_w = frame.shape[:2]
         frame_area = float(max(frame_h * frame_w, 1))
 
-        for box in boxes:
-            conf = float(box.conf[0].item())
-            x1, y1, x2, y2 = [int(v) for v in box.xyxy[0].tolist()]
-            bbox = (x1, y1, max(1, x2 - x1), max(1, y2 - y1))
+        for conf, bbox, source in merged_candidates:
             bbox_area_ratio = float((bbox[2] * bbox[3]) / frame_area)
 
-            required_conf = settings.min_conf_person
-            if bbox_area_ratio <= settings.person_far_bbox_area_ratio:
-                required_conf = min(settings.min_conf_person, settings.min_conf_person_far)
+            required_conf = self._required_person_conf(bbox_area_ratio)
 
             if conf < required_conf:
                 continue
@@ -271,13 +275,113 @@ class MultiDisasterDetector:
                     bbox=bbox,
                     message="Person detected by dedicated person model",
                     metadata={
-                        "source": "person_model",
+                        "source": source,
                         "bbox_area_ratio": round(bbox_area_ratio, 5),
                     },
                 )
             )
 
         return detections, people_boxes
+
+    @staticmethod
+    def _required_person_conf(bbox_area_ratio: float) -> float:
+        required_conf = settings.min_conf_person
+        if bbox_area_ratio <= settings.person_far_bbox_area_ratio:
+            required_conf = min(settings.min_conf_person, settings.min_conf_person_far)
+        return required_conf
+
+    def _predict_person_candidates(
+        self,
+        frame: np.ndarray,
+        request_conf: float,
+        resize_scale: float,
+        source: str,
+    ) -> List[Tuple[float, Tuple[int, int, int, int], str]]:
+        infer_frame = frame
+        scale = max(resize_scale, 1.0)
+        if scale > 1.0:
+            infer_frame = cv2.resize(frame, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC)
+
+        results = self.person_model.predict(
+            infer_frame,
+            conf=request_conf,
+            iou=settings.yolo_iou_threshold,
+            imgsz=settings.person_yolo_imgsz,
+            device=settings.yolo_device,
+            classes=[0],  # COCO person class
+            max_det=settings.person_max_det,
+            augment=settings.person_predict_augment,
+            verbose=False,
+        )
+        if not results:
+            return []
+
+        boxes = results[0].boxes
+        if boxes is None:
+            return []
+
+        h, w = frame.shape[:2]
+        candidates: List[Tuple[float, Tuple[int, int, int, int], str]] = []
+
+        for box in boxes:
+            conf = float(box.conf[0].item())
+            x1, y1, x2, y2 = [int(v) for v in box.xyxy[0].tolist()]
+
+            if scale > 1.0:
+                x1 = int(x1 / scale)
+                y1 = int(y1 / scale)
+                x2 = int(x2 / scale)
+                y2 = int(y2 / scale)
+
+            x1 = max(0, min(x1, w - 1))
+            y1 = max(0, min(y1, h - 1))
+            x2 = max(x1 + 1, min(x2, w))
+            y2 = max(y1 + 1, min(y2, h))
+
+            bbox = (x1, y1, max(1, x2 - x1), max(1, y2 - y1))
+            candidates.append((conf, bbox, source))
+
+        return candidates
+
+    @staticmethod
+    def _bbox_iou(a: Tuple[int, int, int, int], b: Tuple[int, int, int, int]) -> float:
+        ax, ay, aw, ah = a
+        bx, by, bw, bh = b
+
+        ax2, ay2 = ax + aw, ay + ah
+        bx2, by2 = bx + bw, by + bh
+
+        inter_x1 = max(ax, bx)
+        inter_y1 = max(ay, by)
+        inter_x2 = min(ax2, bx2)
+        inter_y2 = min(ay2, by2)
+
+        inter_w = max(0, inter_x2 - inter_x1)
+        inter_h = max(0, inter_y2 - inter_y1)
+        inter_area = float(inter_w * inter_h)
+        if inter_area <= 0:
+            return 0.0
+
+        union = float(aw * ah + bw * bh) - inter_area
+        return inter_area / max(union, 1.0)
+
+    def _merge_person_candidates(
+        self, candidates: List[Tuple[float, Tuple[int, int, int, int], str]]
+    ) -> List[Tuple[float, Tuple[int, int, int, int], str]]:
+        sorted_candidates = sorted(candidates, key=lambda item: item[0], reverse=True)
+        kept: List[Tuple[float, Tuple[int, int, int, int], str]] = []
+
+        for conf, bbox, source in sorted_candidates:
+            duplicate = False
+            for _, kept_bbox, _ in kept:
+                if self._bbox_iou(bbox, kept_bbox) >= settings.person_dedupe_iou:
+                    duplicate = True
+                    break
+
+            if not duplicate:
+                kept.append((conf, bbox, source))
+
+        return kept
 
     @staticmethod
     def _passes_confidence_threshold(disaster_type: str, conf: float) -> bool:
