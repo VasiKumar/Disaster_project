@@ -226,9 +226,16 @@ class MultiDisasterDetector:
         people_boxes: List[Tuple[int, int, int, int]] = []
         results = self.person_model.predict(
             frame,
-            conf=max(settings.yolo_conf_threshold, settings.min_conf_person),
+            conf=max(
+                0.05,
+                min(
+                    settings.yolo_conf_threshold,
+                    settings.min_conf_person,
+                    settings.min_conf_person_far,
+                ),
+            ),
             iou=settings.yolo_iou_threshold,
-            imgsz=settings.yolo_imgsz,
+            imgsz=settings.person_yolo_imgsz,
             device=settings.yolo_device,
             classes=[0],  # COCO person class
             verbose=False,
@@ -240,12 +247,22 @@ class MultiDisasterDetector:
         if boxes is None:
             return detections, people_boxes
 
+        frame_h, frame_w = frame.shape[:2]
+        frame_area = float(max(frame_h * frame_w, 1))
+
         for box in boxes:
             conf = float(box.conf[0].item())
-            if conf < settings.min_conf_person:
-                continue
             x1, y1, x2, y2 = [int(v) for v in box.xyxy[0].tolist()]
             bbox = (x1, y1, max(1, x2 - x1), max(1, y2 - y1))
+            bbox_area_ratio = float((bbox[2] * bbox[3]) / frame_area)
+
+            required_conf = settings.min_conf_person
+            if bbox_area_ratio <= settings.person_far_bbox_area_ratio:
+                required_conf = min(settings.min_conf_person, settings.min_conf_person_far)
+
+            if conf < required_conf:
+                continue
+
             people_boxes.append(bbox)
             detections.append(
                 Detection(
@@ -253,7 +270,10 @@ class MultiDisasterDetector:
                     confidence=conf,
                     bbox=bbox,
                     message="Person detected by dedicated person model",
-                    metadata={"source": "person_model"},
+                    metadata={
+                        "source": "person_model",
+                        "bbox_area_ratio": round(bbox_area_ratio, 5),
+                    },
                 )
             )
 
@@ -308,10 +328,31 @@ class MultiDisasterDetector:
             if bottom_ratio < settings.flood_min_bottom_ratio:
                 return False
 
+            roi = frame[max(0, y):y2, max(0, x):x2]
+            if roi.size == 0:
+                return False
+
+            hsv = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV)
+            blue_mask = cv2.inRange(hsv, np.array([85, 40, 40]), np.array([140, 255, 255]))
+            low_sat_mask = cv2.inRange(hsv, np.array([0, 0, 70]), np.array([180, 65, 255]))
+            fire_like_mask = cv2.inRange(hsv, np.array([0, 120, 120]), np.array([35, 255, 255]))
+
+            pixel_count = float(max(hsv.shape[0] * hsv.shape[1], 1))
+            blue_ratio = float(np.count_nonzero(blue_mask)) / pixel_count
+            low_sat_ratio = float(np.count_nonzero(low_sat_mask)) / pixel_count
+            fire_ratio = float(np.count_nonzero(fire_like_mask)) / pixel_count
+            water_signature = max(blue_ratio, low_sat_ratio * settings.flood_low_sat_weight)
+
             if settings.water_label_strict:
                 has_flood_word = any(token in original_label for token in ("flood", "inundation", "waterlog"))
-                if ("water" in original_label) and (not has_flood_word) and conf < 0.88:
+                if ("water" in original_label) and (not has_flood_word) and conf < settings.flood_high_conf_override:
                     return False
+
+            if fire_ratio > settings.flood_max_fire_color_ratio and conf < settings.flood_high_conf_override:
+                return False
+
+            if water_signature < settings.flood_min_color_ratio and conf < settings.flood_high_conf_override:
+                return False
 
         return True
 
@@ -327,7 +368,11 @@ class MultiDisasterDetector:
                 filtered.append(detection)
                 continue
 
-            if self.type_streaks[dtype] >= max(settings.min_consecutive_frames, 1):
+            required_frames = max(settings.min_consecutive_frames, 1)
+            if dtype == "survivor":
+                required_frames = max(settings.survivor_min_consecutive_frames, 1)
+
+            if self.type_streaks[dtype] >= required_frames:
                 filtered.append(detection)
 
         for dtype in list(self.type_streaks.keys()):
@@ -344,7 +389,9 @@ class MultiDisasterDetector:
             return "fire"
         if "smoke" in label or "fume" in label:
             return "smoke"
-        if "flood" in label or "water" in label or "inundation" in label:
+        if "flood" in label or "inundation" in label or "waterlog" in label:
+            return "flood"
+        if settings.allow_generic_water_as_flood and "water" in label:
             return "flood"
         if "accident" in label or "collision" in label or "crash" in label:
             return "road_accident"

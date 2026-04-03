@@ -33,6 +33,7 @@ class Settings:
     yolo_conf_threshold: float = float(os.getenv("YOLO_CONF_THRESHOLD", "0.35"))
     yolo_iou_threshold: float = float(os.getenv("YOLO_IOU_THRESHOLD", "0.45"))
     yolo_imgsz: int = int(os.getenv("YOLO_IMGSZ", "960"))
+    person_yolo_imgsz: int = int(os.getenv("PERSON_YOLO_IMGSZ", "1280"))
     yolo_device: str = os.getenv("YOLO_DEVICE", "cpu")
 
     # Detection quality controls.
@@ -44,18 +45,28 @@ class Settings:
     enable_heuristic_assist: bool = os.getenv("ENABLE_HEURISTIC_ASSIST", "false").lower() == "true"
 
     min_conf_person: float = float(os.getenv("MIN_CONF_PERSON", "0.50"))
+    min_conf_person_far: float = float(os.getenv("MIN_CONF_PERSON_FAR", "0.33"))
     min_conf_fire: float = float(os.getenv("MIN_CONF_FIRE", "0.60"))
     min_conf_smoke: float = float(os.getenv("MIN_CONF_SMOKE", "0.60"))
     min_conf_flood: float = float(os.getenv("MIN_CONF_FLOOD", "0.72"))
     min_conf_generic: float = float(os.getenv("MIN_CONF_GENERIC", "0.45"))
     min_consecutive_frames: int = int(os.getenv("MIN_CONSECUTIVE_FRAMES", "2"))
+    survivor_min_consecutive_frames: int = int(os.getenv("SURVIVOR_MIN_CONSECUTIVE_FRAMES", "1"))
+    person_far_bbox_area_ratio: float = float(os.getenv("PERSON_FAR_BBOX_AREA_RATIO", "0.0035"))
 
     # Class-specific false-positive control (no retraining required).
     fire_min_bbox_area_ratio: float = float(os.getenv("FIRE_MIN_BBOX_AREA_RATIO", "0.003"))
     fire_min_color_ratio: float = float(os.getenv("FIRE_MIN_COLOR_RATIO", "0.015"))
     flood_min_bbox_area_ratio: float = float(os.getenv("FLOOD_MIN_BBOX_AREA_RATIO", "0.02"))
     flood_min_bottom_ratio: float = float(os.getenv("FLOOD_MIN_BOTTOM_RATIO", "0.45"))
+    flood_min_color_ratio: float = float(os.getenv("FLOOD_MIN_COLOR_RATIO", "0.02"))
+    flood_low_sat_weight: float = float(os.getenv("FLOOD_LOW_SAT_WEIGHT", "0.65"))
+    flood_max_fire_color_ratio: float = float(os.getenv("FLOOD_MAX_FIRE_COLOR_RATIO", "0.08"))
+    flood_high_conf_override: float = float(os.getenv("FLOOD_HIGH_CONF_OVERRIDE", "0.93"))
     water_label_strict: bool = os.getenv("WATER_LABEL_STRICT", "true").lower() == "true"
+    allow_generic_water_as_flood: bool = (
+        os.getenv("ALLOW_GENERIC_WATER_AS_FLOOD", "false").lower() == "true"
+    )
 
     danger_fire_min_area_ratio: float = float(os.getenv("DANGER_FIRE_MIN_AREA_RATIO", "0.02"))
     danger_person_fire_max_center_distance_ratio: float = float(
