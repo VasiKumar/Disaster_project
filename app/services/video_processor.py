@@ -83,6 +83,10 @@ class VideoProcessor:
             )
 
             detected_types, danger_tags = self._build_detection_tags(detections)
+            state.resolve_missing_incidents(
+                detected_types=detected_types,
+                missing_grace_frames=settings.incident_missing_grace_frames,
+            )
 
             for incident in incidents:
                 state.add_incident(incident)

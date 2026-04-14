@@ -57,6 +57,7 @@ class Settings:
     person_enable_zoom_pass: bool = os.getenv("PERSON_ENABLE_ZOOM_PASS", "true").lower() == "true"
     person_zoom_pass_scale: float = float(os.getenv("PERSON_ZOOM_PASS_SCALE", "1.6"))
     person_zoom_pass_trigger_count: int = int(os.getenv("PERSON_ZOOM_PASS_TRIGGER_COUNT", "1"))
+    person_zoom_pass_interval: int = int(os.getenv("PERSON_ZOOM_PASS_INTERVAL", "3"))
     person_dedupe_iou: float = float(os.getenv("PERSON_DEDUPE_IOU", "0.45"))
     person_predict_augment: bool = os.getenv("PERSON_PREDICT_AUGMENT", "true").lower() == "true"
     person_max_det: int = int(os.getenv("PERSON_MAX_DET", "300"))
@@ -65,15 +66,48 @@ class Settings:
     fire_min_bbox_area_ratio: float = float(os.getenv("FIRE_MIN_BBOX_AREA_RATIO", "0.003"))
     fire_min_color_ratio: float = float(os.getenv("FIRE_MIN_COLOR_RATIO", "0.015"))
     flood_min_bbox_area_ratio: float = float(os.getenv("FLOOD_MIN_BBOX_AREA_RATIO", "0.02"))
+    flood_min_top_ratio: float = float(os.getenv("FLOOD_MIN_TOP_RATIO", "0.18"))
     flood_min_bottom_ratio: float = float(os.getenv("FLOOD_MIN_BOTTOM_RATIO", "0.45"))
+    flood_min_width_ratio: float = float(os.getenv("FLOOD_MIN_WIDTH_RATIO", "0.22"))
+    flood_max_height_ratio: float = float(os.getenv("FLOOD_MAX_HEIGHT_RATIO", "0.60"))
+    flood_min_aspect_ratio: float = float(os.getenv("FLOOD_MIN_ASPECT_RATIO", "1.10"))
     flood_min_color_ratio: float = float(os.getenv("FLOOD_MIN_COLOR_RATIO", "0.02"))
+    flood_min_blue_ratio: float = float(os.getenv("FLOOD_MIN_BLUE_RATIO", "0.012"))
+    flood_min_muddy_ratio: float = float(os.getenv("FLOOD_MIN_MUDDY_RATIO", "0.010"))
+    flood_min_low_sat_ratio: float = float(os.getenv("FLOOD_MIN_LOW_SAT_RATIO", "0.12"))
+    flood_max_pink_ratio: float = float(os.getenv("FLOOD_MAX_PINK_RATIO", "0.10"))
+    flood_require_water_signature: bool = (
+        os.getenv("FLOOD_REQUIRE_WATER_SIGNATURE", "true").lower() == "true"
+    )
     flood_low_sat_weight: float = float(os.getenv("FLOOD_LOW_SAT_WEIGHT", "0.65"))
     flood_max_fire_color_ratio: float = float(os.getenv("FLOOD_MAX_FIRE_COLOR_RATIO", "0.08"))
     flood_high_conf_override: float = float(os.getenv("FLOOD_HIGH_CONF_OVERRIDE", "0.93"))
+    flood_min_motion_ratio: float = float(os.getenv("FLOOD_MIN_MOTION_RATIO", "0.010"))
+    flood_static_water_signature: float = float(os.getenv("FLOOD_STATIC_WATER_SIGNATURE", "0.055"))
+    flood_motion_roi_start_ratio: float = float(os.getenv("FLOOD_MOTION_ROI_START_RATIO", "0.35"))
+    flood_motion_diff_threshold: int = int(os.getenv("FLOOD_MOTION_DIFF_THRESHOLD", "14"))
+    enable_flood_heuristic_assist: bool = (
+        os.getenv("ENABLE_FLOOD_HEURISTIC_ASSIST", "true").lower() == "true"
+    )
+    flood_heuristic_min_bottom_ratio: float = float(os.getenv("FLOOD_HEURISTIC_MIN_BOTTOM_RATIO", "0.06"))
+    flood_heuristic_min_color_score: float = float(os.getenv("FLOOD_HEURISTIC_MIN_COLOR_SCORE", "0.055"))
+    flood_heuristic_high_color_score: float = float(os.getenv("FLOOD_HEURISTIC_HIGH_COLOR_SCORE", "0.095"))
+    flood_heuristic_min_motion_ratio: float = float(os.getenv("FLOOD_HEURISTIC_MIN_MOTION_RATIO", "0.010"))
+    flood_fusion_on_threshold: float = float(os.getenv("FLOOD_FUSION_ON_THRESHOLD", "0.58"))
+    flood_fusion_off_threshold: float = float(os.getenv("FLOOD_FUSION_OFF_THRESHOLD", "0.40"))
+    flood_scene_gate_on_threshold: float = float(os.getenv("FLOOD_SCENE_GATE_ON_THRESHOLD", "0.28"))
+    flood_scene_gate_off_threshold: float = float(os.getenv("FLOOD_SCENE_GATE_OFF_THRESHOLD", "0.18"))
     water_label_strict: bool = os.getenv("WATER_LABEL_STRICT", "true").lower() == "true"
     allow_generic_water_as_flood: bool = (
         os.getenv("ALLOW_GENERIC_WATER_AS_FLOOD", "false").lower() == "true"
     )
+
+    # Texture & spatial coherence checks — reject indoor objects (clothing, walls)
+    # that happen to be blue/brown but have high edge density or narrow vertical shape.
+    flood_max_water_edge_density: float = float(os.getenv("FLOOD_MAX_WATER_EDGE_DENSITY", "0.12"))
+    flood_min_horizontal_continuity: float = float(os.getenv("FLOOD_MIN_HORIZONTAL_CONTINUITY", "0.15"))
+
+    incident_missing_grace_frames: int = int(os.getenv("INCIDENT_MISSING_GRACE_FRAMES", "4"))
 
     danger_fire_min_area_ratio: float = float(os.getenv("DANGER_FIRE_MIN_AREA_RATIO", "0.02"))
     danger_person_fire_max_center_distance_ratio: float = float(

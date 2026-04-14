@@ -8934,5 +8934,6074 @@
         "bbox_area_ratio": 0.71292
       }
     }
+  },
+  {
+    "id": "01d898df-0ecf-4e6d-8a07-954d4e34fd8c",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.645,
+    "created_at": "2026-04-03T12:07:36.041216",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.60513
+      }
+    }
+  },
+  {
+    "id": "ccd71aa8-7913-4bb6-851a-bdaa7994ef34",
+    "disaster_type": "road_accident",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Potential road accident detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.485,
+    "created_at": "2026-04-03T12:07:41.441485",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "road_accident",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "2e639856-5238-482d-8052-de1c82e27675",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.845,
+    "created_at": "2026-04-03T12:07:42.470698",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "cd948ba9-c670-456f-bff4-f343b9720f19",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.763,
+    "created_at": "2026-04-03T12:07:44.298945",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.61424
+      }
+    }
+  },
+  {
+    "id": "71e4afcd-2b31-4b63-b7ff-a0ecce5eafd4",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.924,
+    "created_at": "2026-04-03T12:07:51.555556",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "a4664289-c6c8-4992-a1b1-44ffdce9dd1f",
+    "disaster_type": "survivor",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.839,
+    "created_at": "2026-04-03T12:07:52.669293",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.64042
+      }
+    }
+  },
+  {
+    "id": "da61ba1a-8fe5-42a0-bc9b-c5734c1e7bb6",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.941,
+    "created_at": "2026-04-03T12:07:59.910788",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "3905b2bc-da4a-4af2-8171-2b5ef8c34850",
+    "disaster_type": "survivor",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.849,
+    "created_at": "2026-04-03T12:08:00.888437",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.638
+      }
+    }
+  },
+  {
+    "id": "fe966d2e-1bc9-47c4-97e7-6d6bda0608bd",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-03T12:08:08.014094",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "c978c7ce-a7b5-4faa-89f7-8ed095146009",
+    "disaster_type": "survivor",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.843,
+    "created_at": "2026-04-03T12:08:08.916547",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.58484
+      }
+    }
+  },
+  {
+    "id": "3e294c31-8f74-4b3a-b945-7e637cdd13fb",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.941,
+    "created_at": "2026-04-03T12:08:16.349735",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "0a2b9a6a-9a85-46bf-9fce-37b463dd0e86",
+    "disaster_type": "survivor",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.849,
+    "created_at": "2026-04-03T12:08:17.020801",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.57262
+      }
+    }
+  },
+  {
+    "id": "b5a0b47c-1d70-47a9-bd57-166d7ace9592",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.722,
+    "created_at": "2026-04-03T12:08:25.061230",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.78548
+      }
+    }
+  },
+  {
+    "id": "5e188f82-6f5c-437c-b5a6-c249a0896eb8",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.661,
+    "created_at": "2026-04-03T12:08:33.087174",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.64797
+      }
+    }
+  },
+  {
+    "id": "370edb59-50ef-40ac-8465-1e5db498cb32",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.623,
+    "created_at": "2026-04-03T12:08:41.087909",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.73289
+      }
+    }
+  },
+  {
+    "id": "2166eb0f-0bd5-41cd-b1c1-3e3edd0c7350",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.622,
+    "created_at": "2026-04-03T12:08:49.196966",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.70688
+      }
+    }
+  },
+  {
+    "id": "dcb43ce8-f710-46ee-8e88-55f5d1d6c204",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.632,
+    "created_at": "2026-04-03T12:08:57.224441",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.72214
+      }
+    }
+  },
+  {
+    "id": "76d5fa4c-63b3-4687-a788-51b9b5fa9630",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.618,
+    "created_at": "2026-04-03T12:09:05.241808",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.72363
+      }
+    }
+  },
+  {
+    "id": "43dd9200-1759-417b-b950-21f8192b25e8",
+    "disaster_type": "road_accident",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Potential road accident detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.481,
+    "created_at": "2026-04-03T12:09:10.016903",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "road_accident",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "65efc5c0-0d22-4d64-97a1-6cefb4411873",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.926,
+    "created_at": "2026-04-03T12:09:12.100706",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "366f0f14-8d9f-4348-9045-274725782bfe",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.568,
+    "created_at": "2026-04-03T12:09:13.268920",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.52064
+      }
+    }
+  },
+  {
+    "id": "66120a7e-4bb4-4eba-881b-1132e12b4399",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.599,
+    "created_at": "2026-04-03T12:09:21.700883",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.6074
+      }
+    }
+  },
+  {
+    "id": "95c07cd8-77d2-4278-86f9-24f54509effc",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.954,
+    "created_at": "2026-04-03T12:09:26.560941",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "fab2017a-9df2-4211-936b-bbef53bdb062",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.523,
+    "created_at": "2026-04-03T12:09:29.812813",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.097
+      }
+    }
+  },
+  {
+    "id": "7d9101bd-ce33-4b6d-95df-f71225ba9ec7",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 2",
+    "location_tag": "Sector-A",
+    "confidence": 0.621,
+    "created_at": "2026-04-03T12:11:20.931132",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 2,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.10997
+      }
+    }
+  },
+  {
+    "id": "0ad91860-4ec4-4d61-811d-c0e3c3f9cc01",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:11:25.274342",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "3b5c4e42-ac40-476e-89d2-39e617e09476",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.576,
+    "created_at": "2026-04-03T12:11:29.301524",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.46832
+      }
+    }
+  },
+  {
+    "id": "ee8cd0aa-d06b-4f55-bc36-e17b69b2fe16",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.933,
+    "created_at": "2026-04-03T12:11:30.195731",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "3e3f08f0-f7d0-4cbe-afaf-0cf91d79eb03",
+    "disaster_type": "survivor",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.86,
+    "created_at": "2026-04-03T12:11:37.407345",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.47414
+      }
+    }
+  },
+  {
+    "id": "c036340f-b964-4e93-b27b-7c858b8e9219",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.945,
+    "created_at": "2026-04-03T12:11:38.291594",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "0da35831-894c-4684-82c8-74d6d687832a",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.781,
+    "created_at": "2026-04-03T12:11:45.639867",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.54398
+      }
+    }
+  },
+  {
+    "id": "4690b290-266b-49ba-8005-64740c9b8685",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:11:46.192534",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "464ac142-d9bb-4a66-9eab-94dfcb8876ec",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.943,
+    "created_at": "2026-04-03T12:11:46.504472",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "5f623686-6194-49ff-9820-f1e57b41ec9f",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.682,
+    "created_at": "2026-04-03T12:11:53.840503",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.66706
+      }
+    }
+  },
+  {
+    "id": "29879adb-652f-4b22-bdb3-24f5c1db00ec",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.97,
+    "created_at": "2026-04-03T12:11:54.541742",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "8c51c6d4-f3ce-47df-8b54-6878f5fe6021",
+    "disaster_type": "survivor",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.817,
+    "created_at": "2026-04-03T12:12:01.966368",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.4401
+      }
+    }
+  },
+  {
+    "id": "5c98ae28-05df-4460-b439-d987081ddf96",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.934,
+    "created_at": "2026-04-03T12:12:02.996489",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "20ed9eeb-234d-4c8c-9fc4-cf7e01192f57",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.556,
+    "created_at": "2026-04-03T12:12:06.573742",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.23
+      }
+    }
+  },
+  {
+    "id": "170588ed-fe04-4958-9381-2710f0c8617f",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.73,
+    "created_at": "2026-04-03T12:18:57.188002",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.5415
+      }
+    }
+  },
+  {
+    "id": "b23eca6d-b392-4350-9a8c-cdd5954e398f",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:19:02.694328",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "d7709158-68c4-4e2e-a384-b3c5de80839c",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.777,
+    "created_at": "2026-04-03T12:19:05.284394",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.37885
+      }
+    }
+  },
+  {
+    "id": "287a98cc-b8c4-450e-9296-d23d321e8edf",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 2",
+    "location_tag": "Sector-A",
+    "confidence": 0.687,
+    "created_at": "2026-04-03T12:19:13.380416",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 2,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.42406
+      }
+    }
+  },
+  {
+    "id": "ec9b13f3-0b10-4e14-8ac9-1d283b9bc4bc",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:19:16.007347",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "03557bbf-0fdc-4767-a109-bd619f561177",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.624,
+    "created_at": "2026-04-03T12:19:21.601040",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.51846
+      }
+    }
+  },
+  {
+    "id": "dd1f5367-f24b-4463-b8e4-f76066eaf780",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:19:25.474936",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "cb9c5969-ad3f-46b8-9011-21b90ddf68f6",
+    "disaster_type": "survivor",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: CRITICAL | Count: 2",
+    "location_tag": "Sector-A",
+    "confidence": 0.837,
+    "created_at": "2026-04-03T12:19:29.909069",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 2,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.27949
+      }
+    }
+  },
+  {
+    "id": "e2a99ec7-9fd2-4ad8-a398-0c70ba28422d",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:19:34.805492",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "1580768e-d4d2-462c-b8b4-d8a8843b5c97",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 2",
+    "location_tag": "Sector-A",
+    "confidence": 0.604,
+    "created_at": "2026-04-03T12:19:38.029210",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 2,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.27255
+      }
+    }
+  },
+  {
+    "id": "2530fa78-6f39-4325-a46e-4b0c348cd7ff",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:19:43.241688",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "865fde98-ca8a-4cd3-8714-aa5c4759fa84",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.752,
+    "created_at": "2026-04-03T12:19:46.157537",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.5263
+      }
+    }
+  },
+  {
+    "id": "cb179157-5db2-4ab7-9f2b-6b7789f05d99",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:19:51.303377",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "5fc8b4a6-6696-4654-87e6-8958a18328a1",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.712,
+    "created_at": "2026-04-03T12:19:54.317614",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.37824
+      }
+    }
+  },
+  {
+    "id": "9fc78fcf-8e9a-4fd1-a03f-b4f748690667",
+    "disaster_type": "fire",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Fire detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.808,
+    "created_at": "2026-04-03T12:19:55.042573",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "fire",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "c2025de6-43d1-43cb-bd02-9ee71cc3fa21",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:20:00.790395",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "fe59e7d9-04e5-4dcb-bc73-a27948263ff0",
+    "disaster_type": "survivor",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.873,
+    "created_at": "2026-04-03T12:20:02.444580",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.40527
+      }
+    }
+  },
+  {
+    "id": "c803b5fb-a110-4355-817b-47ee9f6ee319",
+    "disaster_type": "fire",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Fire detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.977,
+    "created_at": "2026-04-03T12:20:03.296183",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "fire",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "939c299e-404b-4a8a-9fc0-97d25facc1d5",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:20:08.829061",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "0d9b48cc-f4a5-4c26-a924-802cbb7e39d8",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 2",
+    "location_tag": "Sector-A",
+    "confidence": 0.704,
+    "created_at": "2026-04-03T12:20:10.748957",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 2,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.28506
+      }
+    }
+  },
+  {
+    "id": "9c29bb26-5995-48fb-9444-ebdf11ac278a",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:20:16.859759",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "d4b60ea4-8e13-4f1d-90a5-0ab1bacc3c14",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 2",
+    "location_tag": "Sector-A",
+    "confidence": 0.644,
+    "created_at": "2026-04-03T12:20:18.977545",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 2,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.17737
+      }
+    }
+  },
+  {
+    "id": "bc2fc4a9-2953-48b2-8e4c-b21485883a0e",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:20:24.905322",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "a8c77817-cc7a-41fb-b558-d068a0cf7af1",
+    "disaster_type": "survivor",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.811,
+    "created_at": "2026-04-03T12:20:27.183524",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.47977
+      }
+    }
+  },
+  {
+    "id": "d5b5b9b3-ce76-480b-a4ac-bb143a9ccd5f",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 2",
+    "location_tag": "Sector-A",
+    "confidence": 0.604,
+    "created_at": "2026-04-03T12:20:38.035039",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 2,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.3475
+      }
+    }
+  },
+  {
+    "id": "095a953e-2c1a-467b-a828-51b1975e4177",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:20:38.035039",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "0c2c4519-b7ee-498f-9b02-53a15c133aab",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.57,
+    "created_at": "2026-04-03T12:20:46.052357",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.38251
+      }
+    }
+  },
+  {
+    "id": "5eac1d6a-095e-4051-b71d-6315bb580447",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:20:46.052357",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "f6ddd359-c8f0-4e1d-857d-7e88b424390a",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.582,
+    "created_at": "2026-04-03T12:20:54.281445",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.46117
+      }
+    }
+  },
+  {
+    "id": "29c854d7-cd3d-41ad-a3df-d2ea98080c68",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:20:55.078614",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "0a00dd88-e140-4b43-83da-e0252c385912",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.559,
+    "created_at": "2026-04-03T12:21:04.653447",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.14398
+      }
+    }
+  },
+  {
+    "id": "08bbd08f-0eec-4a6a-b9f4-4d1ac2c5edd9",
+    "disaster_type": "survivor",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.853,
+    "created_at": "2026-04-03T12:21:12.675283",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.5775
+      }
+    }
+  },
+  {
+    "id": "59017432-73f0-4109-a5ff-642a8fb3be7f",
+    "disaster_type": "road_accident",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Potential road accident detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.601,
+    "created_at": "2026-04-03T12:21:15.335091",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "road_accident",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "6beb0364-6bfb-4b9e-a9b9-51080728bd34",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:21:15.335091",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "67b71d9a-eb50-49f8-89d0-8da4bf620d4a",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.653,
+    "created_at": "2026-04-03T12:21:20.935200",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.58137
+      }
+    }
+  },
+  {
+    "id": "a1e71122-042d-49a5-87dc-83ea2e119749",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.799,
+    "created_at": "2026-04-03T12:21:29.294715",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.0566
+      }
+    }
+  },
+  {
+    "id": "fe60817b-f23a-48f0-8c46-1820aa2123b3",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.552,
+    "created_at": "2026-04-03T12:21:31.501303",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.21
+      }
+    }
+  },
+  {
+    "id": "113b9de6-d52e-4875-981c-2b6b21171daa",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.736,
+    "created_at": "2026-04-03T12:24:15.057238",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.61173
+      }
+    }
+  },
+  {
+    "id": "d769576c-4d98-46c1-8341-ef1fdc2c593a",
+    "disaster_type": "road_accident",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Potential road accident detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.522,
+    "created_at": "2026-04-03T12:24:15.352396",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "road_accident",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "c8c9d0ba-d997-4f8d-a3b4-2ee44e1a9921",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.6,
+    "created_at": "2026-04-03T12:24:23.257450",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.41921
+      }
+    }
+  },
+  {
+    "id": "b3d0351f-43d0-44f1-8d54-778960734db4",
+    "disaster_type": "fire",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Fire detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.874,
+    "created_at": "2026-04-03T12:24:28.020020",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "fire",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "8177740e-12ac-4fee-ad03-d7884183796f",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.727,
+    "created_at": "2026-04-03T12:24:32.128046",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.04053
+      }
+    }
+  },
+  {
+    "id": "c6c8e4ef-6bd7-4694-a31e-cef5a5cb232c",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.709,
+    "created_at": "2026-04-03T12:24:40.174510",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.69312
+      }
+    }
+  },
+  {
+    "id": "caa52f9e-464f-4cdf-ac78-07cf7fd5aec7",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.571,
+    "created_at": "2026-04-03T12:24:45.519403",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.3
+      }
+    }
+  },
+  {
+    "id": "5180c30a-b77c-4ab8-bed5-2aba81f3c689",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.622,
+    "created_at": "2026-04-03T12:24:48.406467",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.74063
+      }
+    }
+  },
+  {
+    "id": "bd13c4e0-8072-4e53-8bbf-b18f57ca9c64",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.558,
+    "created_at": "2026-04-03T12:24:54.620103",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.24
+      }
+    }
+  },
+  {
+    "id": "d2424878-7df5-4089-a9d5-9f8e1139e16a",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.686,
+    "created_at": "2026-04-03T12:24:56.669714",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.88931
+      }
+    }
+  },
+  {
+    "id": "aac3cdba-0543-4c91-826a-065a7fb7ed2b",
+    "disaster_type": "road_accident",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Potential road accident detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.731,
+    "created_at": "2026-04-03T12:25:00.904780",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "road_accident",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "15883e20-6ae2-46aa-9f66-491c6dd3fa6d",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 3",
+    "location_tag": "Sector-A",
+    "confidence": 0.631,
+    "created_at": "2026-04-03T12:25:04.814804",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 3,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.06098
+      }
+    }
+  },
+  {
+    "id": "3aa1afcc-c27e-4678-8bdb-b1e20ff91c3f",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 2",
+    "location_tag": "Sector-A",
+    "confidence": 0.672,
+    "created_at": "2026-04-03T12:25:12.958868",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 2,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.0575
+      }
+    }
+  },
+  {
+    "id": "de5610d9-0426-4b75-87ec-5e4bf1e25049",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.559,
+    "created_at": "2026-04-03T12:25:19.989956",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.24
+      }
+    }
+  },
+  {
+    "id": "57f19096-3189-4fb5-97ad-1e140ea67f08",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.713,
+    "created_at": "2026-04-03T12:25:20.989623",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.83045
+      }
+    }
+  },
+  {
+    "id": "20622cce-d2b0-45e6-baeb-e333f3a989f9",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.748,
+    "created_at": "2026-04-03T12:25:29.083820",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.75138
+      }
+    }
+  },
+  {
+    "id": "45af504c-b28d-4bb5-9a71-fa089116f29d",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:25:32.629971",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "710e0d72-6e7a-4255-895a-c8b1f77ed050",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.577,
+    "created_at": "2026-04-03T12:25:37.198557",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.78919
+      }
+    }
+  },
+  {
+    "id": "c1a15d7e-186a-4b56-898a-eb9c3f03f672",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.565,
+    "created_at": "2026-04-03T12:25:45.256590",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.83264
+      }
+    }
+  },
+  {
+    "id": "fee757d9-d679-4a4c-9b66-33877154f520",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.551,
+    "created_at": "2026-04-03T12:25:50.928342",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.21
+      }
+    }
+  },
+  {
+    "id": "02a41c27-363f-46fb-a20c-40a1931301cc",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.521,
+    "created_at": "2026-04-03T12:25:55.490138",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.78078
+      }
+    }
+  },
+  {
+    "id": "62789f9c-1549-498b-ae3e-bb633476119e",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 2",
+    "location_tag": "Sector-A",
+    "confidence": 0.612,
+    "created_at": "2026-04-03T12:27:36.546796",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 2,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.12086
+      }
+    }
+  },
+  {
+    "id": "a9d104ca-0e5a-479d-a0e4-6d0ba459c3f8",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.923,
+    "created_at": "2026-04-03T12:27:36.841366",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "7cf272a0-07f6-42bf-bc79-402f7b159a4a",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.745,
+    "created_at": "2026-04-03T12:27:44.628930",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.43934
+      }
+    }
+  },
+  {
+    "id": "45d44fae-abf8-47ae-8ba4-547afb07bb12",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.956,
+    "created_at": "2026-04-03T12:27:45.081825",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "e7cc2dcf-6b2e-46d9-9bcd-3730852b10f7",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.674,
+    "created_at": "2026-04-03T12:27:52.848013",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.54316
+      }
+    }
+  },
+  {
+    "id": "83e9a6ea-9684-49a8-90b2-2359c0fb345c",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.948,
+    "created_at": "2026-04-03T12:27:53.176474",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "79e01aa8-5299-488b-a3e8-d3d991f84b9e",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:27:57.386012",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "629f4a31-682b-45ec-b131-e964bb69277d",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.583,
+    "created_at": "2026-04-03T12:28:00.325140",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.36
+      }
+    }
+  },
+  {
+    "id": "dbb4daa1-e40d-4336-beb8-b74a3352444a",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.66,
+    "created_at": "2026-04-03T12:28:00.991811",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.67572
+      }
+    }
+  },
+  {
+    "id": "f964e93e-a6b8-4de6-b64f-2b7c8005d477",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.911,
+    "created_at": "2026-04-03T12:28:01.365801",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "36f0652c-0bcc-4124-8288-711077f3fc7c",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.934,
+    "created_at": "2026-04-03T12:28:09.964283",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "c2c766e1-a3dd-4881-8603-af6ca5138509",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 3",
+    "location_tag": "Sector-A",
+    "confidence": 0.469,
+    "created_at": "2026-04-03T12:28:10.441229",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 3,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.00161
+      }
+    }
+  },
+  {
+    "id": "324c608e-5d58-4ebd-928e-379f3d33f0e0",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:28:11.636885",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "74099316-e224-47fd-bdae-8d9158595e35",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.563,
+    "created_at": "2026-04-03T12:28:12.851826",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.26
+      }
+    }
+  },
+  {
+    "id": "a0c35dd8-0dd5-434c-b28f-610897e3ae93",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.96,
+    "created_at": "2026-04-03T12:28:18.246613",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "f544cbe8-b775-44cc-af08-13d755ca52c4",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.771,
+    "created_at": "2026-04-03T12:28:18.900012",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.36723
+      }
+    }
+  },
+  {
+    "id": "97d0b7ff-4850-4573-8013-631e28630060",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.563,
+    "created_at": "2026-04-03T12:28:21.103376",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.27
+      }
+    }
+  },
+  {
+    "id": "6dd5aec2-2ded-4fb3-bd2a-88fa78075b2d",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.562,
+    "created_at": "2026-04-03T12:28:27.125453",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.75406
+      }
+    }
+  },
+  {
+    "id": "4969e997-124b-4d65-9d05-56407b31cd55",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.961,
+    "created_at": "2026-04-03T12:28:27.592414",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "688a50c3-c256-41b5-a2d4-d33174e90bd4",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.602,
+    "created_at": "2026-04-03T12:28:35.430064",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.73753
+      }
+    }
+  },
+  {
+    "id": "fa05368b-02ca-420d-8b92-7fb958332cc5",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.968,
+    "created_at": "2026-04-03T12:28:36.210705",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "c4d85cab-9c0e-45c7-a892-2aa109f9b51f",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.554,
+    "created_at": "2026-04-03T12:28:37.287579",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.22
+      }
+    }
+  },
+  {
+    "id": "58a5fa11-6f0f-4de6-a931-fd1b7a4c945c",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.658,
+    "created_at": "2026-04-03T12:28:43.481222",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.18389
+      }
+    }
+  },
+  {
+    "id": "6064e3b0-f07e-4967-b652-4642a64321de",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.863,
+    "created_at": "2026-04-03T12:28:44.245814",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "34a915f2-0354-4f86-894f-9dbabb364e17",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.681,
+    "created_at": "2026-04-03T12:28:51.644754",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.16065
+      }
+    }
+  },
+  {
+    "id": "4e7c85d6-267b-4aac-8f8a-6c4a7f96a923",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.89,
+    "created_at": "2026-04-03T12:28:52.520043",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "1251d2f7-53e8-46f7-89ec-aeeecb3f5e8e",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.685,
+    "created_at": "2026-04-03T12:28:59.810695",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.193
+      }
+    }
+  },
+  {
+    "id": "c9ccff02-db6f-4a34-bcd7-0a13b75466e5",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.929,
+    "created_at": "2026-04-03T12:29:00.577782",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "7ef0f716-a20f-4d9c-b02d-67e522dd794f",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.891,
+    "created_at": "2026-04-03T12:29:08.638531",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "8d4c53ab-5d12-4525-80be-e14a8d2fead5",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.504,
+    "created_at": "2026-04-03T12:29:09.526426",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.58373
+      }
+    }
+  },
+  {
+    "id": "2dbe764d-1cb3-4cd0-afd0-ebc561c920ed",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.586,
+    "created_at": "2026-04-03T12:29:10.304030",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.38
+      }
+    }
+  },
+  {
+    "id": "2e3a79c5-a6c8-400e-84e7-6ecdc09e40ec",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.959,
+    "created_at": "2026-04-03T12:29:16.691223",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "499ed4f6-3d3c-40b2-8f7d-436d13e986bf",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.666,
+    "created_at": "2026-04-03T12:29:17.552063",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.42472
+      }
+    }
+  },
+  {
+    "id": "d0d00835-4b71-41fb-8d94-9e31a8dba445",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.925,
+    "created_at": "2026-04-03T12:29:24.716687",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "flood",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "2956e05e-3b5f-471b-85e9-196de9102131",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.67,
+    "created_at": "2026-04-03T12:29:25.674107",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.40391
+      }
+    }
+  },
+  {
+    "id": "35e3a2ba-fbe7-4a36-a0d1-f4953a1f7174",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.595,
+    "created_at": "2026-04-03T12:34:13.636384",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.45732
+      }
+    }
+  },
+  {
+    "id": "80b46a73-0b28-4fe4-9d2f-dbc7a880eb05",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:34:18.791246",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "7b070690-fd7a-4bc0-bb2c-c5f89b691bb8",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.598,
+    "created_at": "2026-04-03T12:34:23.279839",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.37637
+      }
+    }
+  },
+  {
+    "id": "36afa3a9-eb86-4c50-aba5-0ab931b3d6e3",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.62,
+    "created_at": "2026-04-03T12:34:31.581436",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.5209
+      }
+    }
+  },
+  {
+    "id": "2ff65edd-e935-41e3-8aaa-62e5489f9f2b",
+    "disaster_type": "road_accident",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Potential road accident detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.463,
+    "created_at": "2026-04-03T12:34:36.713520",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "road_accident",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "a4e25028-e868-4b84-971c-71e91408b0ec",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:34:37.161934",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "af59a419-2c9b-4918-851d-d73d7317b87f",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.697,
+    "created_at": "2026-04-03T12:34:49.777771",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.46917
+      }
+    }
+  },
+  {
+    "id": "c1621e44-a6f2-4630-8ded-d701f55a1576",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.579,
+    "created_at": "2026-04-03T12:34:58.712247",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.5126
+      }
+    }
+  },
+  {
+    "id": "04fc5d1b-1d19-48f9-98fa-55c10595b9ac",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.578,
+    "created_at": "2026-04-03T12:35:06.961902",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.49274
+      }
+    }
+  },
+  {
+    "id": "e398534b-938e-4e08-adb7-d8dea2658a8b",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:35:12.198783",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "9bc285c0-c2c6-49ef-a856-39bfd1698a8a",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 5",
+    "location_tag": "Sector-A",
+    "confidence": 0.584,
+    "created_at": "2026-04-03T12:35:17.593826",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 5,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.00129
+      }
+    }
+  },
+  {
+    "id": "c83ce6c1-0cb6-4198-8ab6-1a6e5e361a10",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.608,
+    "created_at": "2026-04-03T12:35:25.720774",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.20654
+      }
+    }
+  },
+  {
+    "id": "cb422599-e0e6-40f1-90e9-414d6ab5876e",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.798,
+    "created_at": "2026-04-03T12:35:33.796699",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.04763
+      }
+    }
+  },
+  {
+    "id": "ce510070-2ac4-454b-9c0b-dd3cc11538c1",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.501,
+    "created_at": "2026-04-03T12:35:41.939788",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.81525
+      }
+    }
+  },
+  {
+    "id": "663611de-c043-4ec8-978e-927840caa672",
+    "disaster_type": "road_accident",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Potential road accident detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.519,
+    "created_at": "2026-04-03T12:35:52.396370",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "road_accident",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "b3ee840e-219d-4612-9e0b-5dc28a5a2ce1",
+    "disaster_type": "survivor",
+    "severity": "low",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: LOW | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.313,
+    "created_at": "2026-04-03T12:35:53.073131",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model_zoom",
+        "bbox_area_ratio": 0.00091
+      }
+    }
+  },
+  {
+    "id": "47838ed1-fa76-42d5-8395-9cb582d7603c",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:35:54.727610",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "fb4b6836-4673-42e1-a6fe-542b69e7bc6f",
+    "disaster_type": "road_accident",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Potential road accident detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.549,
+    "created_at": "2026-04-03T12:36:05.533882",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "road_accident",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "65b066f4-1c23-4ed6-a36d-f1f46f81754e",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.673,
+    "created_at": "2026-04-03T12:36:12.379943",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.07605
+      }
+    }
+  },
+  {
+    "id": "61b8a0f3-09e1-4045-b016-13fe680cd1e6",
+    "disaster_type": "road_accident",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Potential road accident detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.451,
+    "created_at": "2026-04-03T12:36:14.688110",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "road_accident",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "e65d553c-2380-4c14-a604-d8aa88483901",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:36:18.879622",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "8c10350e-73eb-45a8-8519-544bcb92a76c",
+    "disaster_type": "survivor",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.81,
+    "created_at": "2026-04-03T12:36:20.432545",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.61695
+      }
+    }
+  },
+  {
+    "id": "d9e51929-1348-488a-9a1b-d4db408aee03",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.622,
+    "created_at": "2026-04-03T12:36:28.682717",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.45948
+      }
+    }
+  },
+  {
+    "id": "0450711f-9a36-4283-b60d-52a2c69db138",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:36:28.682717",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "27ee07c7-5ae4-4be7-9080-5b9b186940c7",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.673,
+    "created_at": "2026-04-03T12:36:36.870436",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.50354
+      }
+    }
+  },
+  {
+    "id": "453e2aef-3dd7-4431-9cf6-cdc5cad6d849",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:36:36.870436",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "610f851e-160d-43cd-ad94-04c5c7c1620c",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.515,
+    "created_at": "2026-04-03T12:36:45.432400",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.15905
+      }
+    }
+  },
+  {
+    "id": "5277bb9c-92bf-4062-a24d-78ddf032ad2a",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:36:45.432400",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "ba40fa27-7ddf-44e0-83ad-f2e6131accaa",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.59,
+    "created_at": "2026-04-03T12:37:17.447312",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.1936
+      }
+    }
+  },
+  {
+    "id": "6ab163ba-4c3a-4d13-9223-2e107758c9e0",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.669,
+    "created_at": "2026-04-03T12:37:17.839816",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.8
+      }
+    }
+  },
+  {
+    "id": "b531eaaf-5877-4abc-be73-22d197777050",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.704,
+    "created_at": "2026-04-03T12:37:25.729735",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.58671
+      }
+    }
+  },
+  {
+    "id": "0ede2550-fea8-459c-8cab-5489f7946845",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:37:29.207971",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "8e0e20de-93fc-48ec-8f27-29603b1af3c8",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.565,
+    "created_at": "2026-04-03T12:37:40.506898",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.61281
+      }
+    }
+  },
+  {
+    "id": "6fd30ae8-3feb-40e4-b5a6-6760f67869a9",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:37:46.907423",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "6110fd8a-fb67-47d0-bd9a-b4ad46189633",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.612,
+    "created_at": "2026-04-03T12:44:04.974614",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.51302
+      }
+    }
+  },
+  {
+    "id": "4358a3a2-04be-43c1-9b9f-ea1c7be912d5",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.92,
+    "created_at": "2026-04-03T12:44:05.226397",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_heuristic",
+        "water_signature": 0.3273,
+        "flood_motion_ratio": 0.0079,
+        "bottom_structured_ratio": 0.1627
+      }
+    }
+  },
+  {
+    "id": "85cacd9b-833e-4a87-9b9c-e87899fab932",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.577,
+    "created_at": "2026-04-03T12:44:05.957919",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.34
+      }
+    }
+  },
+  {
+    "id": "ad082e53-e5d2-41ad-9ef6-7dc67a4099e4",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.519,
+    "created_at": "2026-04-03T12:44:13.460299",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.51684
+      }
+    }
+  },
+  {
+    "id": "e59351d3-84e7-46c1-9786-d929616747ee",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.92,
+    "created_at": "2026-04-03T12:44:14.926180",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_heuristic",
+        "water_signature": 0.5379,
+        "flood_motion_ratio": 0.1278,
+        "bottom_structured_ratio": 0.0902
+      }
+    }
+  },
+  {
+    "id": "51f990ac-2b9e-4ec1-b5f4-a6bf8ea2e667",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.777,
+    "created_at": "2026-04-03T12:44:22.469438",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.28369
+      }
+    }
+  },
+  {
+    "id": "639c4ae2-2005-4fbf-856b-83db3f436681",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:44:22.469438",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "57e03647-a447-4f3c-98c2-b07bd136960d",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.92,
+    "created_at": "2026-04-03T12:44:22.951487",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_heuristic",
+        "water_signature": 0.5295,
+        "flood_motion_ratio": 0.5863,
+        "bottom_structured_ratio": 0.2257
+      }
+    }
+  },
+  {
+    "id": "3d73ad86-bfdf-4f56-a93d-1265f83a30d8",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.757,
+    "created_at": "2026-04-03T12:44:30.487339",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.10235
+      }
+    }
+  },
+  {
+    "id": "85621f11-6ab5-47dd-bd00-9a0c1c3d71e4",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.92,
+    "created_at": "2026-04-03T12:44:31.208475",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_heuristic",
+        "water_signature": 0.3733,
+        "flood_motion_ratio": 0.5776,
+        "bottom_structured_ratio": 0.1363
+      }
+    }
+  },
+  {
+    "id": "5de10b9a-f72a-48a3-a216-dde8d2080446",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:44:33.411927",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "3f9ef525-11c5-4df9-9ce2-f08fcf619f55",
+    "disaster_type": "road_accident",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Potential road accident detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.845,
+    "created_at": "2026-04-03T12:44:38.235859",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "road_accident",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "c08a651d-4e6a-4d4e-87c2-40588def62d1",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.92,
+    "created_at": "2026-04-03T12:44:39.423944",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_heuristic",
+        "water_signature": 0.5317,
+        "flood_motion_ratio": 0.4655,
+        "bottom_structured_ratio": 0.357
+      }
+    }
+  },
+  {
+    "id": "d41d2f2c-fbb3-42b8-8303-fdb73030bb4f",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.511,
+    "created_at": "2026-04-03T12:44:40.052759",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.14779
+      }
+    }
+  },
+  {
+    "id": "5cc26a4c-e657-4a4f-b5b4-3d60df738978",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.92,
+    "created_at": "2026-04-03T12:44:47.633887",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_heuristic",
+        "water_signature": 0.4488,
+        "flood_motion_ratio": 0.0788,
+        "bottom_structured_ratio": 0.2879
+      }
+    }
+  },
+  {
+    "id": "ea531493-3f75-424e-9ab6-f612b8385c48",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.638,
+    "created_at": "2026-04-03T12:44:55.564049",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.4454
+      }
+    }
+  },
+  {
+    "id": "3c43c9c0-1897-4d47-b5b0-186df67e3268",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.92,
+    "created_at": "2026-04-03T12:44:56.014583",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_heuristic",
+        "water_signature": 0.3467,
+        "flood_motion_ratio": 0.5481,
+        "bottom_structured_ratio": 0.0734
+      }
+    }
+  },
+  {
+    "id": "c292c7e1-a751-4c40-a57d-e9070ba07d5b",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:45:00.644842",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "833221c8-3b15-4114-b471-9a60fe347626",
+    "disaster_type": "road_accident",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Potential road accident detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.526,
+    "created_at": "2026-04-03T12:45:01.750532",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "road_accident",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "03eb0c93-ff58-4ecb-a88a-e586c47b6233",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 2",
+    "location_tag": "Sector-A",
+    "confidence": 0.486,
+    "created_at": "2026-04-03T12:45:03.833706",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 2,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.00062
+      }
+    }
+  },
+  {
+    "id": "de68d88c-4a95-4251-a332-7468439024ab",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.92,
+    "created_at": "2026-04-03T12:45:04.193331",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_heuristic",
+        "water_signature": 0.4036,
+        "flood_motion_ratio": 0.4739,
+        "bottom_structured_ratio": 0.4203
+      }
+    }
+  },
+  {
+    "id": "ed317f76-9c4c-4285-9968-959ac9dd8c44",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.562,
+    "created_at": "2026-04-03T12:45:10.004350",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.26
+      }
+    }
+  },
+  {
+    "id": "ba09bc0a-b9b2-45dc-8788-dafad0fe181b",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.544,
+    "created_at": "2026-04-03T12:45:11.919224",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.52992
+      }
+    }
+  },
+  {
+    "id": "f95f13ea-7322-45b1-81c4-12c1a644bb4b",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.92,
+    "created_at": "2026-04-03T12:45:12.260973",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_heuristic",
+        "water_signature": 0.5255,
+        "flood_motion_ratio": 0.2445,
+        "bottom_structured_ratio": 0.2168
+      }
+    }
+  },
+  {
+    "id": "a64622e4-90d8-435f-bded-04f056c162df",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.587,
+    "created_at": "2026-04-03T12:45:19.981679",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.55688
+      }
+    }
+  },
+  {
+    "id": "10cad32b-2e79-42ee-b4a4-032790e86a53",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.92,
+    "created_at": "2026-04-03T12:45:20.299995",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_heuristic",
+        "water_signature": 0.6512,
+        "flood_motion_ratio": 0.0365,
+        "bottom_structured_ratio": 0.4039
+      }
+    }
+  },
+  {
+    "id": "48eece1a-afc5-4e0a-a503-e1a89bfb2da4",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:45:20.722616",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "593a176e-8941-432d-ac3c-6457b08f2df7",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.92,
+    "created_at": "2026-04-03T12:45:28.352733",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_heuristic",
+        "water_signature": 0.6457,
+        "flood_motion_ratio": 0.043,
+        "bottom_structured_ratio": 0.285
+      }
+    }
+  },
+  {
+    "id": "b1d252fa-cc4d-4c04-ab48-5010ca1fdd0a",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.631,
+    "created_at": "2026-04-03T12:45:28.478438",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.78344
+      }
+    }
+  },
+  {
+    "id": "fc9084a3-599f-49df-831e-5472176e2342",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.505,
+    "created_at": "2026-04-03T12:49:46.677101",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.86964
+      }
+    }
+  },
+  {
+    "id": "879b43a6-7867-4edb-9fc7-339331821db4",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.92,
+    "created_at": "2026-04-03T12:49:46.935333",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_heuristic",
+        "water_signature": 0.6419,
+        "flood_motion_ratio": 0.1271,
+        "bottom_structured_ratio": 0.2743
+      }
+    }
+  },
+  {
+    "id": "23f5e757-a7e0-4252-aa31-7391f4f73c73",
+    "disaster_type": "road_accident",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Potential road accident detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.675,
+    "created_at": "2026-04-03T12:49:47.847946",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "road_accident",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "4a368f25-6606-41bc-a09d-1958aa8f8fc7",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.582,
+    "created_at": "2026-04-03T12:49:54.758831",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.67229
+      }
+    }
+  },
+  {
+    "id": "83a1bd0b-5758-41df-b162-a46251ef1476",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.92,
+    "created_at": "2026-04-03T12:49:55.243551",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_heuristic",
+        "water_signature": 0.4395,
+        "flood_motion_ratio": 0.6335,
+        "bottom_structured_ratio": 0.2168
+      }
+    }
+  },
+  {
+    "id": "2a74ea1e-1208-4eb2-9457-c26ca9f32687",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.95,
+    "created_at": "2026-04-03T12:55:39.242837",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.9283,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.3902,
+        "flood_motion_ratio": 0.024,
+        "scene_gate": 0.9509,
+        "bottom_structured_ratio": 0.3761,
+        "fused_score": 0.95
+      }
+    }
+  },
+  {
+    "id": "1b0ca125-ffa9-4002-a4b1-f739524f6051",
+    "disaster_type": "fire",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Fire detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.977,
+    "created_at": "2026-04-03T12:55:40.675530",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "fire",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "cfa96737-94c0-4b19-beb8-45445829e916",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.95,
+    "created_at": "2026-04-03T12:55:47.615787",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.7799,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.3688,
+        "flood_motion_ratio": 0.0611,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.3023,
+        "fused_score": 0.95
+      }
+    }
+  },
+  {
+    "id": "a970c75d-167b-4112-a7cd-a750f9075f87",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.579,
+    "created_at": "2026-04-03T12:55:49.122668",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.22795
+      }
+    }
+  },
+  {
+    "id": "99ce88df-8837-4555-a181-1a9afdeb8970",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:55:50.328000",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "5e69843e-9eb4-44bc-9c2d-6174195728a7",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.955,
+    "created_at": "2026-04-03T12:55:55.705739",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.9548,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.4965,
+        "flood_motion_ratio": 0.3155,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.2132,
+        "fused_score": 0.9548
+      }
+    }
+  },
+  {
+    "id": "7522005f-189a-4ccb-80dd-a6e1a754b4d8",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.706,
+    "created_at": "2026-04-03T12:55:57.164769",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.48549
+      }
+    }
+  },
+  {
+    "id": "72fc2f22-8639-44db-820f-ecb22ff85f45",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:55:58.491551",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "729d5e7f-c3f7-4384-b780-d64ec2bf5c4e",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.566,
+    "created_at": "2026-04-03T12:55:59.178990",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.28
+      }
+    }
+  },
+  {
+    "id": "1c652c5b-b86f-46fc-9a3c-000365f6dac6",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.95,
+    "created_at": "2026-04-03T12:56:04.005153",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.6856,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.5167,
+        "flood_motion_ratio": 0.6815,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.1479,
+        "fused_score": 0.95
+      }
+    }
+  },
+  {
+    "id": "8aea4f3a-e945-43bf-9c49-6f503bac67ba",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.616,
+    "created_at": "2026-04-03T12:56:05.301112",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.90763
+      }
+    }
+  },
+  {
+    "id": "e4e449d8-ed6d-4663-82e9-9a184567c6d4",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.558,
+    "created_at": "2026-04-03T12:56:08.055442",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.24
+      }
+    }
+  },
+  {
+    "id": "15b58f35-d422-4a3f-bfe8-890e828b5df4",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.966,
+    "created_at": "2026-04-03T12:56:12.016455",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.966,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.735,
+        "flood_motion_ratio": 0.3893,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.2264,
+        "fused_score": 0.966
+      }
+    }
+  },
+  {
+    "id": "11b5840c-1b72-453d-a02b-9992de4565e8",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.759,
+    "created_at": "2026-04-03T12:56:13.450370",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.6354
+      }
+    }
+  },
+  {
+    "id": "f3143c02-c45b-41b1-818c-06423625b80a",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:56:18.435669",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "e4dc2e14-652d-43d6-8dc5-234253f3523f",
+    "disaster_type": "fallen_person",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.713,
+    "created_at": "2026-04-03T12:56:18.782001",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 2.01
+      }
+    }
+  },
+  {
+    "id": "19dc772a-b202-4d1c-8949-82319996af52",
+    "disaster_type": "fire",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Fire detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.936,
+    "created_at": "2026-04-03T12:56:20.195890",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "fire",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "d69b35c1-cf40-4d82-a8b0-f7197e16f013",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.95,
+    "created_at": "2026-04-03T12:56:20.195890",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.0,
+        "yolo_flood_label": "",
+        "water_signature": 0.6321,
+        "flood_motion_ratio": 0.7983,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.4352,
+        "fused_score": 0.95
+      }
+    }
+  },
+  {
+    "id": "bf85f352-1316-4874-ae8a-0465daaa9e71",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.95,
+    "created_at": "2026-04-03T12:56:28.296295",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.7607,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.6204,
+        "flood_motion_ratio": 0.0221,
+        "scene_gate": 0.9274,
+        "bottom_structured_ratio": 0.3924,
+        "fused_score": 0.95
+      }
+    }
+  },
+  {
+    "id": "3c077cff-5030-4f93-9cd2-1427ca46eeb8",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.761,
+    "created_at": "2026-04-03T12:56:31.869548",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.63113
+      }
+    }
+  },
+  {
+    "id": "d02f7e44-4b77-4f41-b8ef-24c1973aeee5",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.95,
+    "created_at": "2026-04-03T12:56:36.437119",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.9341,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.5918,
+        "flood_motion_ratio": 0.3244,
+        "scene_gate": 0.8055,
+        "bottom_structured_ratio": 0.026,
+        "fused_score": 0.95
+      }
+    }
+  },
+  {
+    "id": "43420b4a-be78-4ede-8d7d-672a81a01526",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.512,
+    "created_at": "2026-04-03T12:56:43.505398",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.19137
+      }
+    }
+  },
+  {
+    "id": "cf896964-6a26-46e4-b9e4-a8899992511c",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-03T12:56:44.595882",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.9802,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.6528,
+        "flood_motion_ratio": 0.093,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.3502,
+        "fused_score": 0.9802
+      }
+    }
+  },
+  {
+    "id": "dd6fe9ff-f900-4481-8470-f5e121008d26",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.532,
+    "created_at": "2026-04-03T12:56:51.611353",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.59766
+      }
+    }
+  },
+  {
+    "id": "b6c682cf-2994-42c4-9e3a-4560575eb3a2",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.95,
+    "created_at": "2026-04-03T12:56:52.651502",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.7173,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.5174,
+        "flood_motion_ratio": 0.0867,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.1111,
+        "fused_score": 0.95
+      }
+    }
+  },
+  {
+    "id": "6bb5a499-656d-418e-873a-ae8d1d3bf8f3",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.528,
+    "created_at": "2026-04-03T12:56:59.800201",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.59326
+      }
+    }
+  },
+  {
+    "id": "fa7221f4-3793-4ab4-8f00-e963c953547c",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.95,
+    "created_at": "2026-04-03T12:57:00.707193",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.8392,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.4862,
+        "flood_motion_ratio": 0.0487,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.1163,
+        "fused_score": 0.95
+      }
+    }
+  },
+  {
+    "id": "ea540215-f684-432c-9aba-023bc9d87778",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.558,
+    "created_at": "2026-04-03T12:57:07.809675",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.58932
+      }
+    }
+  },
+  {
+    "id": "52ff3bea-83e1-4ea6-a7d5-7fd10015a553",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.95,
+    "created_at": "2026-04-03T12:57:08.734593",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.7039,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.4841,
+        "flood_motion_ratio": 0.1682,
+        "scene_gate": 0.9824,
+        "bottom_structured_ratio": 0.0897,
+        "fused_score": 0.95
+      }
+    }
+  },
+  {
+    "id": "5e4bf1bc-a61e-4486-9c01-141525b5c145",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T12:57:10.824568",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "efd5978f-41f1-4db3-b023-2004932f4b85",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.505,
+    "created_at": "2026-04-03T12:57:15.856191",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.42106
+      }
+    }
+  },
+  {
+    "id": "43f8dbd4-381f-43db-b4f0-f9b6d1a974a1",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.95,
+    "created_at": "2026-04-03T12:57:16.816541",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.8388,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.6105,
+        "flood_motion_ratio": 0.031,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.5612,
+        "fused_score": 0.95
+      }
+    }
+  },
+  {
+    "id": "8a056a8b-c3f4-4baa-b63f-bdac1d94e9e7",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-03T13:02:03.932105",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.8475,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.6356,
+        "flood_motion_ratio": 0.3078,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.5069,
+        "fused_score": 1.0
+      }
+    }
+  },
+  {
+    "id": "dea8abf4-1d44-4458-ac8d-495664aa0313",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.539,
+    "created_at": "2026-04-03T13:02:04.239163",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.62161
+      }
+    }
+  },
+  {
+    "id": "ad4aef19-c75d-4d51-a30f-0eac589c1de5",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-03T13:02:12.085269",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.4678,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.5594,
+        "flood_motion_ratio": 0.7947,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.3539,
+        "fused_score": 1.0
+      }
+    }
+  },
+  {
+    "id": "d1836816-2149-4912-948d-2dde6eab2b7c",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.603,
+    "created_at": "2026-04-03T13:02:12.377511",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.12354
+      }
+    }
+  },
+  {
+    "id": "c273ef73-4ec9-462a-bb04-b791cdcc19df",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T13:02:13.285850",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "2bdbc497-3d98-4668-bfc8-d83fa7cd03d9",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.553,
+    "created_at": "2026-04-03T13:02:15.227775",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.21
+      }
+    }
+  },
+  {
+    "id": "2df55897-a6af-4852-a214-825258db1cfc",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-03T13:02:20.158052",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.956,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.6995,
+        "flood_motion_ratio": 0.2268,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.2941,
+        "fused_score": 1.0
+      }
+    }
+  },
+  {
+    "id": "80fdf397-6ad0-4204-81a0-aca56b5c8e06",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.778,
+    "created_at": "2026-04-03T13:02:20.571499",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.38181
+      }
+    }
+  },
+  {
+    "id": "2479d42d-0a17-465e-aaff-43caff0fced5",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.756,
+    "created_at": "2026-04-03T13:02:28.351238",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.9116,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.5506,
+        "flood_motion_ratio": 0.0113,
+        "scene_gate": 0.7375,
+        "bottom_structured_ratio": 0.093,
+        "fused_score": 0.756
+      }
+    }
+  },
+  {
+    "id": "ea869342-ecf9-4a88-a39c-680e0f980337",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.528,
+    "created_at": "2026-04-03T13:02:28.785286",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.15295
+      }
+    }
+  },
+  {
+    "id": "31f8ca0f-c32a-4473-b647-e3bbe5b310ea",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-03T13:02:36.398661",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.8657,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.6861,
+        "flood_motion_ratio": 0.7078,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.4461,
+        "fused_score": 1.0
+      }
+    }
+  },
+  {
+    "id": "82952fbe-e3fb-4363-b0cd-3179b2bded49",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.719,
+    "created_at": "2026-04-03T13:02:38.649459",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.58305
+      }
+    }
+  },
+  {
+    "id": "315db400-965b-4a4e-9f62-fa139061e8e4",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-03T13:02:38.649459",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "ec620a89-4fc8-4e4f-a5f7-5da303857aca",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.502,
+    "created_at": "2026-04-03T13:12:20.538658",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.63076
+      }
+    }
+  },
+  {
+    "id": "ee89a7cc-9f40-4ab3-9c32-2064a3427a06",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-03T13:12:22.152793",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.0,
+        "yolo_flood_label": "",
+        "water_signature": 0.2166,
+        "flood_motion_ratio": 0.3771,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.1503,
+        "fused_score": 1.0
+      }
+    }
+  },
+  {
+    "id": "a3986837-a6ba-4859-9670-59fef14faf6d",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.812,
+    "created_at": "2026-04-03T13:12:30.165248",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.0,
+        "yolo_flood_label": "",
+        "water_signature": 0.1084,
+        "flood_motion_ratio": 0.0333,
+        "scene_gate": 0.8007,
+        "bottom_structured_ratio": 0.0346,
+        "fused_score": 0.8121
+      }
+    }
+  },
+  {
+    "id": "1c90b590-ed58-4b50-b7b0-1ec0b1db4c8f",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.585,
+    "created_at": "2026-04-14T10:14:54.247199",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.36797
+      }
+    }
+  },
+  {
+    "id": "4dd4bc7c-e66c-4b1f-bb59-6860ade573fa",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:14:54.247199",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "047cd8b6-6461-4626-8f0f-6b3e6f73e2f2",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.878,
+    "created_at": "2026-04-14T10:14:54.405652",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.4495,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.2616,
+        "flood_motion_ratio": 0.0365,
+        "scene_gate": 0.8777,
+        "bottom_structured_ratio": 0.2991,
+        "fused_score": 0.8777
+      }
+    }
+  },
+  {
+    "id": "ef08ae38-99f0-4d01-a491-323091f452e9",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.552,
+    "created_at": "2026-04-14T10:14:54.769426",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.21
+      }
+    }
+  },
+  {
+    "id": "46d04260-640b-49b4-8245-c565ceebaa43",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.61,
+    "created_at": "2026-04-14T10:15:02.251123",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.37497
+      }
+    }
+  },
+  {
+    "id": "81eac64b-4e63-4509-869b-c1eaa397ea19",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:15:02.251123",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "93a08e24-8647-4dc4-bc9f-6935b78a3dc3",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.65,
+    "created_at": "2026-04-14T10:15:02.500930",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.7311,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.326,
+        "flood_motion_ratio": 0.0278,
+        "scene_gate": 0.8324,
+        "bottom_structured_ratio": 0.2839,
+        "fused_score": 0.6086
+      }
+    }
+  },
+  {
+    "id": "fd543990-84ac-4e66-a205-d4d69914ed68",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.584,
+    "created_at": "2026-04-14T10:15:04.312890",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.37
+      }
+    }
+  },
+  {
+    "id": "b5453974-08d9-4816-b424-4c7a5b890945",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.583,
+    "created_at": "2026-04-14T10:29:42.283329",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.54784
+      }
+    }
+  },
+  {
+    "id": "b4e584d7-3170-4317-a66c-66ea99ea6ece",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:29:42.283329",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "b9ed0c15-0734-43af-acb3-51750770eff9",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-14T10:29:44.030778",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.0,
+        "yolo_flood_label": "",
+        "water_signature": 0.258,
+        "flood_motion_ratio": 0.7593,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.2062,
+        "fused_score": 1.0
+      }
+    }
+  },
+  {
+    "id": "65142083-5c60-4fa3-a74b-8c7d6aa1eb19",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.589,
+    "created_at": "2026-04-14T10:29:50.371955",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.48239
+      }
+    }
+  },
+  {
+    "id": "8cd30fa5-158c-40aa-a415-b77fdaa60260",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:29:50.371955",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "51b742b3-a1c8-4b64-bc4d-6735012a85b0",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.65,
+    "created_at": "2026-04-14T10:29:52.079305",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.5837,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.2357,
+        "flood_motion_ratio": 0.017,
+        "scene_gate": 0.776,
+        "bottom_structured_ratio": 0.2146,
+        "fused_score": 0.4529
+      }
+    }
+  },
+  {
+    "id": "307e79a9-b9df-40f9-8d32-68074cc750d0",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.551,
+    "created_at": "2026-04-14T10:29:54.790242",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.21
+      }
+    }
+  },
+  {
+    "id": "a1ddd7b8-a4d0-4c6d-9357-d903ae0778aa",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-14T10:30:56.404626",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.9197,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.2556,
+        "flood_motion_ratio": 0.4381,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.1952,
+        "fused_score": 1.0
+      }
+    }
+  },
+  {
+    "id": "29310fad-ca79-4018-b9a2-f067daf8a91c",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 2",
+    "location_tag": "Sector-A",
+    "confidence": 0.681,
+    "created_at": "2026-04-14T10:30:56.547472",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 2,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.14792
+      }
+    }
+  },
+  {
+    "id": "84572da7-3de0-4b96-bed6-b2ddb9e036c9",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:30:56.547472",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "4f7f74b3-6ae1-495b-9a04-bdefa81eca66",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.573,
+    "created_at": "2026-04-14T10:30:56.705474",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.32
+      }
+    }
+  },
+  {
+    "id": "3298ec28-1307-43c5-9b29-fc2c3e2ddd81",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.593,
+    "created_at": "2026-04-14T10:31:04.626588",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.07003
+      }
+    }
+  },
+  {
+    "id": "6d0cb9fe-14d7-4798-89c4-fcad1eb5861a",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:31:04.626588",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "311c5054-5107-4ebc-afd1-ba388932a9b6",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-14T10:31:05.930499",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.9584,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.225,
+        "flood_motion_ratio": 0.1878,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.1551,
+        "fused_score": 1.0
+      }
+    }
+  },
+  {
+    "id": "e5305050-cf17-464c-8428-314f25716016",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.718,
+    "created_at": "2026-04-14T10:31:14.009962",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.9385,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.1346,
+        "flood_motion_ratio": 0.0252,
+        "scene_gate": 0.7645,
+        "bottom_structured_ratio": 0.1499,
+        "fused_score": 0.7175
+      }
+    }
+  },
+  {
+    "id": "6e1bc623-660e-4e00-b910-f39ec98e42a9",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.519,
+    "created_at": "2026-04-14T10:31:19.594762",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.12944
+      }
+    }
+  },
+  {
+    "id": "ab334ef2-c1d6-4709-aa2a-1e80cb9ecf5d",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:31:19.594762",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "32ca531e-b4bb-48e3-b5b6-d399be783bf8",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.962,
+    "created_at": "2026-04-14T10:31:25.231500",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.7775,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.2155,
+        "flood_motion_ratio": 0.3605,
+        "scene_gate": 0.9619,
+        "bottom_structured_ratio": 0.1246,
+        "fused_score": 0.9619
+      }
+    }
+  },
+  {
+    "id": "274e822c-02e9-4611-8742-f4ece336c104",
+    "disaster_type": "survivor",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.816,
+    "created_at": "2026-04-14T10:31:27.659543",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.50904
+      }
+    }
+  },
+  {
+    "id": "fd4d2c0e-04bd-4081-a5f9-becc8d7f8de3",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:31:27.659543",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "39060487-dc90-4f1c-96cf-71c2c7af5d82",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-14T10:31:33.345057",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.8818,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.2867,
+        "flood_motion_ratio": 0.0586,
+        "scene_gate": 0.9927,
+        "bottom_structured_ratio": 0.2279,
+        "fused_score": 0.9927
+      }
+    }
+  },
+  {
+    "id": "62d1cef9-2b60-43ce-a48e-04ab0e09c95b",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.57,
+    "created_at": "2026-04-14T10:31:35.822765",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.6525
+      }
+    }
+  },
+  {
+    "id": "b06c47e0-c2a3-4f6e-9a53-ac6fd1652c8d",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.565,
+    "created_at": "2026-04-14T10:31:36.621001",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.28
+      }
+    }
+  },
+  {
+    "id": "e270ffac-f37b-4c46-8ec1-8f91c27f6ce1",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.621,
+    "created_at": "2026-04-14T10:37:22.090745",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.54986
+      }
+    }
+  },
+  {
+    "id": "6d644ee3-d135-44ef-af66-abf58957e599",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:37:22.090745",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "f17e7ecd-f219-4697-8a69-4954d4bd877f",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.762,
+    "created_at": "2026-04-14T10:37:30.197845",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.46
+      }
+    }
+  },
+  {
+    "id": "c7b4e502-d6de-44c1-8a6c-da7efcb2fd89",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:37:30.197845",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "af57e535-efa4-4507-ac37-f894eeaaa3e5",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-14T10:37:37.863385",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.0,
+        "yolo_flood_label": "",
+        "water_signature": 0.3681,
+        "flood_motion_ratio": 0.4349,
+        "scene_gate": 1.0,
+        "bottom_structured_ratio": 0.6347,
+        "fused_score": 1.0,
+        "water_edge_density": 0.0394,
+        "horizontal_continuity": 0.2785
+      }
+    }
+  },
+  {
+    "id": "1ef41a10-0381-470a-ab45-d99359a32d7b",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.642,
+    "created_at": "2026-04-14T10:37:38.302823",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.16939
+      }
+    }
+  },
+  {
+    "id": "c28185b4-10fa-4267-aadc-66d91082bbca",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:37:38.302823",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "5a8b16af-f5d3-4458-9639-5c16ce6ee73a",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.54,
+    "created_at": "2026-04-14T10:37:46.548573",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.46379
+      }
+    }
+  },
+  {
+    "id": "8e09bd00-7b6e-4ae5-9f79-be0581b5042b",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:37:46.548573",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "88e9db9c-3838-451a-8b4f-23f9ea63e235",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.733,
+    "created_at": "2026-04-14T10:37:54.562042",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.48333
+      }
+    }
+  },
+  {
+    "id": "01589cf1-ed93-4d80-942f-271ced0ae8cb",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:37:54.562042",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "dba465f9-427b-48a0-a761-607832da5fab",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 2",
+    "location_tag": "Sector-A",
+    "confidence": 0.65,
+    "created_at": "2026-04-14T10:38:03.095781",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 2,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.19271
+      }
+    }
+  },
+  {
+    "id": "345ff381-e9af-408b-a80a-21e1437f7d3d",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:38:03.095781",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "d60766a0-892a-40bb-a5ed-410c29984ee7",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-14T10:38:04.940117",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.9573,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.3535,
+        "flood_motion_ratio": 0.1519,
+        "scene_gate": 0.8196,
+        "bottom_structured_ratio": 0.3945,
+        "fused_score": 1.0,
+        "water_edge_density": 0.0286,
+        "horizontal_continuity": 0.1139
+      }
+    }
+  },
+  {
+    "id": "e1acf6aa-a9e9-40bf-995e-31e86c500a1a",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.68,
+    "created_at": "2026-04-14T10:38:11.303331",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.13779
+      }
+    }
+  },
+  {
+    "id": "4b8dfe51-af38-4886-b21b-e367ed5ec997",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:38:12.290986",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "7723770a-b629-4ab8-8f08-dd3126626e83",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-14T10:38:14.538471",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.6204,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.3165,
+        "flood_motion_ratio": 0.2845,
+        "scene_gate": 0.3133,
+        "bottom_structured_ratio": 0.2758,
+        "fused_score": 1.0,
+        "water_edge_density": 0.009,
+        "horizontal_continuity": 0.0127
+      }
+    }
+  },
+  {
+    "id": "96fbad6e-cbfe-44e1-8cfa-da0a7d779309",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.609,
+    "created_at": "2026-04-14T10:38:14.811153",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.49
+      }
+    }
+  },
+  {
+    "id": "74e09dbc-d576-4b03-b5df-af5d9a01c7e5",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.676,
+    "created_at": "2026-04-14T10:38:19.349913",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.32586
+      }
+    }
+  },
+  {
+    "id": "bc42e003-5651-48a5-8ba2-c559b49b2135",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:38:20.473327",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "73aef7fa-9fb9-4a84-adb8-2f4e107f45ee",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.612,
+    "created_at": "2026-04-14T10:38:27.461080",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.29
+      }
+    }
+  },
+  {
+    "id": "7958a4cb-ec53-47bf-bc24-8ae41033ad0f",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:38:28.737295",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "b9df47ee-49ff-4b22-905e-76d95181c9a5",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.636,
+    "created_at": "2026-04-14T10:38:35.531560",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.30785
+      }
+    }
+  },
+  {
+    "id": "a4146871-c392-4904-b08e-77108e0a2ce2",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:38:37.903415",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "12ef3cf6-5c47-4c88-ab9b-415d9a32eb1e",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 2",
+    "location_tag": "Sector-A",
+    "confidence": 0.592,
+    "created_at": "2026-04-14T10:38:39.666414",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 2,
+      "sample": {
+        "aspect_ratio": 1.34
+      }
+    }
+  },
+  {
+    "id": "44017657-06cc-4ca9-80c3-d69389fa6b83",
+    "disaster_type": "road_accident",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Potential road accident detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.469,
+    "created_at": "2026-04-14T10:38:41.167060",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "road_accident",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "d1527326-215e-4013-8b72-a9fa31658672",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 3",
+    "location_tag": "Sector-A",
+    "confidence": 0.662,
+    "created_at": "2026-04-14T10:38:43.591753",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 3,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.05314
+      }
+    }
+  },
+  {
+    "id": "723bfb5c-f276-430b-99a1-c2dab0955ea2",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.604,
+    "created_at": "2026-04-14T10:38:48.602665",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.47
+      }
+    }
+  },
+  {
+    "id": "1d7d3b98-0c82-4b18-afd1-3f9051b6955a",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:38:50.150303",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "a77d8b1f-b019-4037-8ee2-ee498e2eb82e",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.507,
+    "created_at": "2026-04-14T10:38:51.712359",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.47656
+      }
+    }
+  },
+  {
+    "id": "d35fa997-4b8c-4c51-8064-531c6505b337",
+    "disaster_type": "road_accident",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Potential road accident detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.661,
+    "created_at": "2026-04-14T10:38:57.564652",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "road_accident",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "60e06a33-c4da-4b5e-8f6a-d36bff3af0f5",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 8",
+    "location_tag": "Sector-A",
+    "confidence": 0.622,
+    "created_at": "2026-04-14T10:38:59.785068",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 8,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.00878
+      }
+    }
+  },
+  {
+    "id": "0c7ad4c9-7c2f-4cbb-a1ce-7ec554bb06f7",
+    "disaster_type": "survivor",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: CRITICAL | Count: 8",
+    "location_tag": "Sector-A",
+    "confidence": 0.724,
+    "created_at": "2026-04-14T10:39:07.882467",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 8,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.01346
+      }
+    }
+  },
+  {
+    "id": "de5b33f3-ecd4-47c9-84c1-43a37170ad7c",
+    "disaster_type": "fallen_person",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Fallen person detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.553,
+    "created_at": "2026-04-14T10:39:08.644395",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "aspect_ratio": 1.22
+      }
+    }
+  },
+  {
+    "id": "2a50eb18-def8-4525-9dc6-e54140aa3f21",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:39:09.574429",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "aac8c67a-35fc-4212-bd8f-d24cd282b504",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.58,
+    "created_at": "2026-04-14T10:39:16.456914",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.57663
+      }
+    }
+  },
+  {
+    "id": "6649d1ab-9181-45c3-977b-7d1b9d91f105",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:39:17.664341",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "b78b1c97-3091-4b5a-b047-3b5aa7671f27",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.722,
+    "created_at": "2026-04-14T10:39:24.481512",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.27841
+      }
+    }
+  },
+  {
+    "id": "28306766-5d09-456b-89f8-13c9a78c8f41",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:39:26.133210",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "1e975d0e-23ed-474d-9063-650b53b48d6a",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-14T10:39:27.679436",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.4128,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.2497,
+        "flood_motion_ratio": 0.6222,
+        "scene_gate": 0.25,
+        "bottom_structured_ratio": 0.1662,
+        "fused_score": 1.0,
+        "water_edge_density": 0.054,
+        "horizontal_continuity": 0.0
+      }
+    }
+  },
+  {
+    "id": "2269060d-3de2-4983-95a4-803c980fe693",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-14T10:39:37.219289",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.9638,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.2522,
+        "flood_motion_ratio": 0.3211,
+        "scene_gate": 0.3133,
+        "bottom_structured_ratio": 0.2242,
+        "fused_score": 1.0,
+        "water_edge_density": 0.0669,
+        "horizontal_continuity": 0.0127
+      }
+    }
+  },
+  {
+    "id": "a1bcc7ec-f7b5-469b-ad2d-7e27fc7f2cf2",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.53,
+    "created_at": "2026-04-14T10:39:41.123545",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.18567
+      }
+    }
+  },
+  {
+    "id": "18e6657c-10b2-4711-b113-a1dc9e97a082",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:39:41.261476",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "31136da8-7e53-4658-a53d-1c6904d6063e",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-14T10:39:49.125240",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.0,
+        "yolo_flood_label": "",
+        "water_signature": 0.5043,
+        "flood_motion_ratio": 0.6468,
+        "scene_gate": 0.8829,
+        "bottom_structured_ratio": 0.3888,
+        "fused_score": 1.0,
+        "water_edge_density": 0.0208,
+        "horizontal_continuity": 0.1266
+      }
+    }
+  },
+  {
+    "id": "909f25f9-694f-4c9b-b1cd-c7f64a4e3ea0",
+    "disaster_type": "road_accident",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Potential road accident detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.681,
+    "created_at": "2026-04-14T10:39:49.318755",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "yolo_label": "road_accident",
+        "source": "yolo"
+      }
+    }
+  },
+  {
+    "id": "139e619f-9496-407c-a395-d3d9d56d2855",
+    "disaster_type": "survivor",
+    "severity": "high",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: HIGH | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.769,
+    "created_at": "2026-04-14T10:39:50.581747",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.03691
+      }
+    }
+  },
+  {
+    "id": "b53d4a96-eabe-4bcb-beb1-f789e93b94b4",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:39:53.258479",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
+  },
+  {
+    "id": "c0c7df7c-8aa6-4176-95d2-fd72485f471a",
+    "disaster_type": "flood",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Flood/waterlogging detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.98,
+    "created_at": "2026-04-14T10:39:57.180842",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "flood_fusion",
+        "yolo_flood_conf": 0.5976,
+        "yolo_flood_label": "flood",
+        "water_signature": 0.1933,
+        "flood_motion_ratio": 0.6963,
+        "scene_gate": 0.25,
+        "bottom_structured_ratio": 0.2041,
+        "fused_score": 1.0,
+        "water_edge_density": 0.0022,
+        "horizontal_continuity": 0.0
+      }
+    }
+  },
+  {
+    "id": "2ddd7e30-31b9-4ca3-ade3-7362c4844922",
+    "disaster_type": "survivor",
+    "severity": "medium",
+    "camera_id": "CAM-01",
+    "message": "Survivor(s) detected | Severity: MEDIUM | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.542,
+    "created_at": "2026-04-14T10:39:58.590375",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "source": "person_model",
+        "bbox_area_ratio": 0.52078
+      }
+    }
+  },
+  {
+    "id": "689d2404-13e6-41d8-9b34-3308e02b02e4",
+    "disaster_type": "unsafe_zone",
+    "severity": "critical",
+    "camera_id": "CAM-01",
+    "message": "Unsafe zone breach detected | Severity: CRITICAL | Count: 1",
+    "location_tag": "Sector-A",
+    "confidence": 0.9,
+    "created_at": "2026-04-14T10:40:01.411427",
+    "resolved": false,
+    "metadata": {
+      "detection_count": 1,
+      "sample": {
+        "zone": "collapsed_building_zone"
+      }
+    }
   }
 ]

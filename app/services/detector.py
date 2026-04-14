@@ -20,6 +20,7 @@ except ImportError:  # pragma: no cover - optional dependency at runtime
 @dataclass
 class MotionState:
     prev_gray: np.ndarray | None = None
+    prev_flood_gray: np.ndarray | None = None
 
 
 class MultiDisasterDetector:
@@ -31,8 +32,14 @@ class MultiDisasterDetector:
         self.yolo_model = self._load_yolo_model()
         self.person_model = self._load_person_model()
         self.type_streaks: Dict[str, int] = {}
+        self.frame_index = 0
+        self.last_flood_motion_ratio = 0.0
+        self.flood_hysteresis_active = False
+        self.yolo_flood_candidates: List[Tuple[float, Tuple[int, int, int, int], str]] = []
 
     def detect(self, frame: np.ndarray) -> List[Detection]:
+        self.frame_index += 1
+        self.last_flood_motion_ratio = self._estimate_flood_motion(frame)
         detections: List[Detection] = []
 
         yolo_events, yolo_people = self._detect_with_yolo(frame)
@@ -51,6 +58,8 @@ class MultiDisasterDetector:
 
         self.last_people_count = len(people_boxes)
         detections.extend(self._person_based_events(frame, people_boxes))
+
+        detections.extend(self._detect_flood_fusion(frame, self.last_flood_motion_ratio))
 
         # Heuristics are useful in pure-heuristic mode, but can create noise when YOLO is active.
         if settings.use_heuristics_only or settings.enable_heuristic_assist:
@@ -143,6 +152,7 @@ class MultiDisasterDetector:
     def _detect_with_yolo(
         self, frame: np.ndarray
     ) -> Tuple[List[Detection], List[Tuple[int, int, int, int]]]:
+        self.yolo_flood_candidates = []
         if self.yolo_model is None:
             return [], []
 
@@ -172,6 +182,14 @@ class MultiDisasterDetector:
             label = str(names.get(cls_id, cls_id)).lower()
             x1, y1, x2, y2 = [int(v) for v in box.xyxy[0].tolist()]
             bbox = (x1, y1, max(1, x2 - x1), max(1, y2 - y1))
+
+            if (
+                ("flood" in label)
+                or ("inundation" in label)
+                or ("waterlog" in label)
+                or (settings.allow_generic_water_as_flood and ("water" in label))
+            ):
+                self.yolo_flood_candidates.append((conf, bbox, label))
 
             if label == "person" and settings.use_disaster_model_for_person and conf >= settings.min_conf_person:
                 people_boxes.append(bbox)
@@ -240,7 +258,14 @@ class MultiDisasterDetector:
             source="person_model",
         )
 
-        if settings.person_enable_zoom_pass and len(candidates) <= settings.person_zoom_pass_trigger_count:
+        zoom_interval = max(settings.person_zoom_pass_interval, 1)
+        should_run_zoom_pass = (
+            settings.person_enable_zoom_pass
+            and len(candidates) <= settings.person_zoom_pass_trigger_count
+            and (self.frame_index % zoom_interval == 0)
+        )
+
+        if should_run_zoom_pass:
             zoom_request_conf = max(0.05, min(base_request_conf, settings.person_zoom_pass_conf))
             candidates.extend(
                 self._predict_person_candidates(
@@ -395,8 +420,8 @@ class MultiDisasterDetector:
             return conf >= settings.min_conf_flood
         return conf >= settings.min_conf_generic
 
-    @staticmethod
     def _passes_semantic_validation(
+        self,
         frame: np.ndarray,
         disaster_type: str,
         original_label: str,
@@ -428,7 +453,22 @@ class MultiDisasterDetector:
             if area_ratio < settings.flood_min_bbox_area_ratio:
                 return False
 
+            has_flood_word = any(token in original_label for token in ("flood", "inundation", "waterlog"))
+
+            width_ratio = float(bw / max(1, w))
+            height_ratio = float(bh / max(1, h))
+            aspect_ratio = float(bw / max(bh, 1))
+            if width_ratio < settings.flood_min_width_ratio:
+                return False
+            if height_ratio > settings.flood_max_height_ratio:
+                return False
+            if aspect_ratio < settings.flood_min_aspect_ratio:
+                return False
+
+            top_ratio = float(y / max(1, h))
             bottom_ratio = float((y + bh) / max(1, h))
+            if top_ratio < settings.flood_min_top_ratio:
+                return False
             if bottom_ratio < settings.flood_min_bottom_ratio:
                 return False
 
@@ -438,24 +478,55 @@ class MultiDisasterDetector:
 
             hsv = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV)
             blue_mask = cv2.inRange(hsv, np.array([85, 40, 40]), np.array([140, 255, 255]))
+            muddy_mask = cv2.inRange(hsv, np.array([6, 35, 35]), np.array([32, 190, 235]))
             low_sat_mask = cv2.inRange(hsv, np.array([0, 0, 70]), np.array([180, 65, 255]))
+            pink_mask = cv2.inRange(hsv, np.array([135, 70, 60]), np.array([179, 255, 255]))
             fire_like_mask = cv2.inRange(hsv, np.array([0, 120, 120]), np.array([35, 255, 255]))
 
             pixel_count = float(max(hsv.shape[0] * hsv.shape[1], 1))
             blue_ratio = float(np.count_nonzero(blue_mask)) / pixel_count
+            muddy_ratio = float(np.count_nonzero(muddy_mask)) / pixel_count
             low_sat_ratio = float(np.count_nonzero(low_sat_mask)) / pixel_count
+            pink_ratio = float(np.count_nonzero(pink_mask)) / pixel_count
             fire_ratio = float(np.count_nonzero(fire_like_mask)) / pixel_count
-            water_signature = max(blue_ratio, low_sat_ratio * settings.flood_low_sat_weight)
+            water_signature = max(
+                blue_ratio + low_sat_ratio * 0.20,
+                muddy_ratio + low_sat_ratio * settings.flood_low_sat_weight,
+            )
+            # Require at least blue OR muddy colour; low-saturation alone is
+            # NOT sufficient because grey walls, concrete, and skin tones all
+            # register as low-saturation and would pass this gate.
+            has_water_signature = (
+                blue_ratio >= settings.flood_min_blue_ratio
+                or muddy_ratio >= settings.flood_min_muddy_ratio
+                or (low_sat_ratio >= settings.flood_min_low_sat_ratio
+                    and max(blue_ratio, muddy_ratio) >= settings.flood_min_blue_ratio * 0.5)
+            )
 
             if settings.water_label_strict:
-                has_flood_word = any(token in original_label for token in ("flood", "inundation", "waterlog"))
                 if ("water" in original_label) and (not has_flood_word) and conf < settings.flood_high_conf_override:
                     return False
 
-            if fire_ratio > settings.flood_max_fire_color_ratio and conf < settings.flood_high_conf_override:
+            # Pink/magenta walls are a frequent false-positive source for flood; reject them.
+            if pink_ratio > settings.flood_max_pink_ratio and max(blue_ratio, muddy_ratio) < settings.flood_min_blue_ratio:
                 return False
 
-            if water_signature < settings.flood_min_color_ratio and conf < settings.flood_high_conf_override:
+            if fire_ratio > settings.flood_max_fire_color_ratio:
+                return False
+
+            # Indoor static scenes should not pass flood unless water-color evidence is strong.
+            if (
+                self.last_flood_motion_ratio < settings.flood_min_motion_ratio
+                and water_signature < settings.flood_static_water_signature
+            ):
+                return False
+
+            if settings.flood_require_water_signature and (not has_water_signature):
+                return False
+
+            if (not settings.flood_require_water_signature) and (
+                water_signature < settings.flood_min_color_ratio
+            ) and (conf < settings.flood_high_conf_override):
                 return False
 
         return True
@@ -493,10 +564,6 @@ class MultiDisasterDetector:
             return "fire"
         if "smoke" in label or "fume" in label:
             return "smoke"
-        if "flood" in label or "inundation" in label or "waterlog" in label:
-            return "flood"
-        if settings.allow_generic_water_as_flood and "water" in label:
-            return "flood"
         if "accident" in label or "collision" in label or "crash" in label:
             return "road_accident"
         if "crowd" in label or "stampede" in label or "panic" in label:
@@ -536,6 +603,332 @@ class MultiDisasterDetector:
                 )
 
         return detections
+
+    def _estimate_flood_motion(self, frame: np.ndarray) -> float:
+        h, _ = frame.shape[:2]
+        y0 = int(h * settings.flood_motion_roi_start_ratio)
+        roi = frame[max(0, min(y0, h - 1)):, :]
+        if roi.size == 0:
+            return 0.0
+
+        gray = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
+        motion_ratio = 0.0
+
+        prev = self.motion_state.prev_flood_gray
+        if prev is not None and prev.shape == gray.shape:
+            diff = cv2.absdiff(prev, gray)
+            motion_ratio = float(np.count_nonzero(diff >= settings.flood_motion_diff_threshold)) / float(
+                max(diff.size, 1)
+            )
+
+        self.motion_state.prev_flood_gray = gray
+        return motion_ratio
+
+    def _detect_flood_heuristic(self, frame: np.ndarray, flood_motion_ratio: float) -> List[Detection]:
+        h, _ = frame.shape[:2]
+        y0 = int(h * settings.flood_motion_roi_start_ratio)
+        roi = frame[max(0, min(y0, h - 1)):, :]
+        if roi.size == 0:
+            return []
+
+        hsv = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV)
+        blue_mask = cv2.inRange(hsv, np.array([85, 40, 40]), np.array([140, 255, 255]))
+        muddy_mask = cv2.inRange(hsv, np.array([6, 35, 35]), np.array([32, 190, 235]))
+        low_sat_mask = cv2.inRange(hsv, np.array([0, 0, 70]), np.array([180, 65, 255]))
+        pink_mask = cv2.inRange(hsv, np.array([135, 70, 60]), np.array([179, 255, 255]))
+
+        pixel_count = float(max(hsv.shape[0] * hsv.shape[1], 1))
+        blue_ratio = float(np.count_nonzero(blue_mask)) / pixel_count
+        muddy_ratio = float(np.count_nonzero(muddy_mask)) / pixel_count
+        low_sat_ratio = float(np.count_nonzero(low_sat_mask)) / pixel_count
+        pink_ratio = float(np.count_nonzero(pink_mask)) / pixel_count
+
+        water_signature = max(
+            blue_ratio + low_sat_ratio * 0.20,
+            muddy_ratio + low_sat_ratio * settings.flood_low_sat_weight,
+        )
+
+        structured_mask = cv2.bitwise_or(blue_mask, muddy_mask)
+        bh = structured_mask.shape[0]
+        bottom_start = int(bh * 0.55)
+        bottom_strip = structured_mask[bottom_start:, :]
+        bottom_structured_ratio = float(np.count_nonzero(bottom_strip)) / float(max(bottom_strip.size, 1))
+
+        if pink_ratio > settings.flood_max_pink_ratio and max(blue_ratio, muddy_ratio) < settings.flood_min_blue_ratio:
+            return []
+
+        strong_color = water_signature >= settings.flood_heuristic_min_color_score
+        very_strong_color = water_signature >= settings.flood_heuristic_high_color_score
+        enough_bottom = bottom_structured_ratio >= settings.flood_heuristic_min_bottom_ratio
+        enough_motion = flood_motion_ratio >= settings.flood_heuristic_min_motion_ratio
+
+        if not enough_bottom:
+            return []
+
+        if not (very_strong_color or (strong_color and enough_motion)):
+            return []
+
+        confidence = min(
+            0.48
+            + water_signature * 1.45
+            + min(flood_motion_ratio, 0.12) * 2.20,
+            0.92,
+        )
+
+        return [
+            Detection(
+                disaster_type="flood",
+                confidence=confidence,
+                message="Heuristic flood flow detected",
+                metadata={
+                    "source": "flood_heuristic",
+                    "water_signature": round(water_signature, 4),
+                    "flood_motion_ratio": round(flood_motion_ratio, 4),
+                    "bottom_structured_ratio": round(bottom_structured_ratio, 4),
+                },
+            )
+        ]
+
+    @staticmethod
+    def _norm_score(value: float, low: float, high: float) -> float:
+        if high <= low:
+            return 1.0 if value >= high else 0.0
+        return float(np.clip((value - low) / (high - low), 0.0, 1.0))
+
+    @staticmethod
+    def _water_region_edge_density(roi_gray: np.ndarray, water_mask: np.ndarray) -> float:
+        """Measure Canny edge density in water-colored regions.
+
+        Real flood water has very smooth, uniform surfaces → low edge density.
+        Indoor objects (clothing, furniture, textured walls) have far higher
+        edge density.  Returns ratio of edge pixels to total water pixels.
+        """
+        water_pixel_count = int(np.count_nonzero(water_mask))
+        if water_pixel_count < 200:
+            # Too few water pixels to analyse meaningfully.
+            return 1.0  # Treat as high-edge (non-water)
+
+        # Mask edges: compute Canny on the whole ROI, then AND with water mask
+        edges = cv2.Canny(roi_gray, 50, 150)
+        water_edges = cv2.bitwise_and(edges, water_mask)
+        edge_count = int(np.count_nonzero(water_edges))
+        return float(edge_count) / float(water_pixel_count)
+
+    @staticmethod
+    def _water_horizontal_continuity(water_mask: np.ndarray) -> float:
+        """Check how continuously the water-colored pixels span the frame width.
+
+        Real flood water forms wide horizontal bands stretching across most of
+        the frame.  Hanging clothes, isolated objects, or narrow patches produce
+        a low horizontal continuity score.
+
+        For each row in the water mask, compute the fraction of consecutive runs
+        that span at least 50% of the frame width.  Return the fraction of rows
+        in the bottom half with good horizontal span.
+        """
+        mask_h, mask_w = water_mask.shape[:2]
+        if mask_h == 0 or mask_w == 0:
+            return 0.0
+
+        # Only look at the bottom 50% of the ROI where flood water concentrates.
+        start_row = mask_h // 2
+        target_span = max(int(mask_w * 0.40), 1)  # 40% of frame width
+        rows_with_span = 0
+        total_rows = max(mask_h - start_row, 1)
+
+        for row_idx in range(start_row, mask_h, 2):  # step by 2 for speed
+            row = water_mask[row_idx, :]
+            if np.count_nonzero(row) < target_span:
+                continue
+
+            # Find the longest continuous run of nonzero pixels.
+            nonzero = row > 0
+            max_run = 0
+            current_run = 0
+            for val in nonzero:
+                if val:
+                    current_run += 1
+                    max_run = max(max_run, current_run)
+                else:
+                    current_run = 0
+
+            if max_run >= target_span:
+                rows_with_span += 1
+
+        return float(rows_with_span) / float(total_rows // 2 + 1)  # accounting for step=2
+
+    def _detect_flood_fusion(self, frame: np.ndarray, flood_motion_ratio: float) -> List[Detection]:
+        h, w_frame = frame.shape[:2]
+        
+        # Validating YOLO candidates first: reject boxes that are completely un-flood-like in shape or cover 100% of frame
+        valid_yolo_candidates = []
+        frame_area = float(max(h * w_frame, 1))
+        
+        for conf, bbox, label in self.yolo_flood_candidates:
+            bx, by, bw, bh = bbox
+            bbox_area_ratio = (bw * bh) / frame_area
+            # A box that covers literally the entire screen (>85%) or is perfectly square is often an artifact of indoor false positives
+            if bbox_area_ratio > 0.85:
+                continue
+            if bbox_area_ratio < settings.flood_min_bbox_area_ratio:
+                continue
+            valid_yolo_candidates.append((conf, bbox, label))
+
+        y0 = int(h * settings.flood_motion_roi_start_ratio)
+        roi = frame[max(0, min(y0, h - 1)):, :]
+        if roi.size == 0:
+            self.flood_hysteresis_active = False
+            return []
+
+        hsv = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV)
+        blue_mask = cv2.inRange(hsv, np.array([85, 40, 40]), np.array([140, 255, 255]))
+        # Increased minimum saturation for muddy mask from 35 to 60 to prevent indoor wood/skin/walls from triggering it
+        muddy_mask = cv2.inRange(hsv, np.array([6, 60, 35]), np.array([32, 190, 235]))
+        low_sat_mask = cv2.inRange(hsv, np.array([0, 0, 70]), np.array([180, 65, 255]))
+        pink_mask = cv2.inRange(hsv, np.array([135, 70, 60]), np.array([179, 255, 255]))
+        fire_like_mask = cv2.inRange(hsv, np.array([0, 120, 120]), np.array([35, 255, 255]))
+
+        pixel_count = float(max(hsv.shape[0] * hsv.shape[1], 1))
+        blue_ratio = float(np.count_nonzero(blue_mask)) / pixel_count
+        muddy_ratio = float(np.count_nonzero(muddy_mask)) / pixel_count
+        low_sat_ratio = float(np.count_nonzero(low_sat_mask)) / pixel_count
+        pink_ratio = float(np.count_nonzero(pink_mask)) / pixel_count
+        fire_ratio = float(np.count_nonzero(fire_like_mask)) / pixel_count
+
+        water_signature = max(
+            blue_ratio + (low_sat_ratio * 0.10 if blue_ratio > 0.05 else 0.0),
+            muddy_ratio + (low_sat_ratio * 0.25 if muddy_ratio > 0.10 else 0.0),
+        )
+
+        structured_mask = cv2.bitwise_or(blue_mask, muddy_mask)
+        bh = structured_mask.shape[0]
+        bottom_start = int(bh * 0.55)
+        bottom_strip = structured_mask[bottom_start:, :]
+        bottom_structured_ratio = float(np.count_nonzero(bottom_strip)) / float(max(bottom_strip.size, 1))
+
+        water_component = self._norm_score(
+            water_signature,
+            settings.flood_heuristic_min_color_score,
+            settings.flood_heuristic_high_color_score * 1.5,
+        )
+        motion_component = self._norm_score(
+            flood_motion_ratio,
+            settings.flood_heuristic_min_motion_ratio,
+            settings.flood_heuristic_min_motion_ratio * 5.0,
+        )
+        bottom_component = self._norm_score(
+            bottom_structured_ratio,
+            settings.flood_heuristic_min_bottom_ratio,
+            settings.flood_heuristic_min_bottom_ratio * 3.0,
+        )
+
+        # Scene gate heavily depends on actual water signature now, not just low sat
+        scene_gate = 0.60 * water_component + 0.25 * motion_component + 0.15 * bottom_component
+
+        if pink_ratio > settings.flood_max_pink_ratio and max(blue_ratio, muddy_ratio) < settings.flood_min_blue_ratio:
+            scene_gate *= 0.10
+        if fire_ratio > settings.flood_max_fire_color_ratio:
+            scene_gate *= 0.10
+
+        # ── NEW: Edge-density suppression ───────────────────────────────
+        # Real water is smooth; objects like clothing/furniture have lots of
+        # texture edges.  Heavily penalise the scene gate when the water-
+        # coloured pixels contain dense edges.
+        roi_gray = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
+        water_edge_density = self._water_region_edge_density(roi_gray, structured_mask)
+        if water_edge_density > settings.flood_max_water_edge_density:
+            edge_penalty = min(
+                (water_edge_density - settings.flood_max_water_edge_density)
+                / max(settings.flood_max_water_edge_density, 0.01)
+                * 0.6,
+                0.85,
+            )
+            scene_gate *= (1.0 - edge_penalty)
+
+        # ── NEW: Horizontal continuity suppression ─────────────────────
+        # Flood water spans the frame as broad horizontal bands.  Narrow
+        # vertical columns of blue (e.g. hanging clothes) produce very low
+        # horizontal continuity.
+        h_continuity = self._water_horizontal_continuity(structured_mask)
+        if h_continuity < settings.flood_min_horizontal_continuity:
+            continuity_penalty = 1.0 - (h_continuity / max(settings.flood_min_horizontal_continuity, 0.01))
+            scene_gate *= max(0.05, 1.0 - continuity_penalty * 0.75)
+
+        yolo_conf = 0.0
+        best_bbox: Tuple[int, int, int, int] | None = None
+        best_label = ""
+        for conf, bbox, label in valid_yolo_candidates:
+            if conf > yolo_conf:
+                yolo_conf = conf
+                best_bbox = bbox
+                best_label = label
+
+        # Hard floor: if there is essentially no water-like colour anywhere in
+        # the lower portion of the frame, reject immediately regardless of what
+        # YOLO thinks.  Real floods always show *some* blue, muddy, or grey tone.
+        min_water_evidence = max(blue_ratio, muddy_ratio, low_sat_ratio * 0.3)
+        if min_water_evidence < 0.008:
+            self.flood_hysteresis_active = False
+            return []
+
+        # Also require a minimum of structured water colour in the bottom strip
+        if bottom_structured_ratio < 0.005:
+            self.flood_hysteresis_active = False
+            return []
+
+        # Heuristic-only path: require strong evidence on BOTH colour and motion
+        heuristic_score = 0.0
+        if settings.enable_flood_heuristic_assist and water_component > 0.5 and motion_component > 0.4 and bottom_component > 0.3:
+            heuristic_score = 0.20 + 0.40 * water_component + 0.25 * motion_component + 0.15 * bottom_component
+
+        # YOLO path: scene_gate must be non-trivial.  Previously the formula
+        # gave 15% "free" credit (0.15 + 0.85*gate) even when gate==0, letting
+        # any YOLO detection with conf>=0.60 create a flood event in a living
+        # room.  Now YOLO score is entirely gated by the scene evidence.
+        if scene_gate < 0.10:
+            yolo_scene_score = 0.0  # no water evidence → YOLO flood ignored
+        else:
+            yolo_scene_score = yolo_conf * scene_gate
+        fused_score = max(yolo_scene_score, heuristic_score)
+
+        score_threshold = (
+            settings.flood_fusion_off_threshold
+            if self.flood_hysteresis_active
+            else settings.flood_fusion_on_threshold
+        )
+        scene_threshold = (
+            settings.flood_scene_gate_off_threshold
+            if self.flood_hysteresis_active
+            else settings.flood_scene_gate_on_threshold
+        )
+
+        if fused_score < score_threshold or scene_gate < scene_threshold:
+            self.flood_hysteresis_active = False
+            return []
+
+        self.flood_hysteresis_active = True
+        confidence = float(min(max(fused_score, settings.min_conf_flood), 0.98))
+
+        return [
+            Detection(
+                disaster_type="flood",
+                confidence=confidence,
+                bbox=best_bbox,
+                message="Flood pattern detected",
+                metadata={
+                    "source": "flood_fusion",
+                    "yolo_flood_conf": round(yolo_conf, 4),
+                    "yolo_flood_label": best_label,
+                    "water_signature": round(water_signature, 4),
+                    "flood_motion_ratio": round(flood_motion_ratio, 4),
+                    "scene_gate": round(scene_gate, 4),
+                    "bottom_structured_ratio": round(bottom_structured_ratio, 4),
+                    "fused_score": round(fused_score, 4),
+                    "water_edge_density": round(water_edge_density, 4),
+                    "horizontal_continuity": round(h_continuity, 4),
+                },
+            )
+        ]
 
     def _detect_fire_and_smoke(self, frame: np.ndarray) -> List[Detection]:
         detections: List[Detection] = []
